@@ -166,10 +166,10 @@ strong {
 }
 
 .resumeList {
-  margin: 0; 
-  padding: 0;
+  text-align: left;
+  margin: 11px; 
+  padding: 0px;
 }
-
 
 .resumeSection {
   width:400px; 
