@@ -160,12 +160,13 @@ strong {
 
 .wrapper {
   max-width: 960px;
-  /*margin: 0 auto;*/
+  margin: 0 auto;
   position: relative;
-  /*padding: 0 20px;*/
+  padding: 0 20px;
 }
 
 .resumeList {
+  list-style: none;
   margin: 0; 
   padding: 0;
 }
