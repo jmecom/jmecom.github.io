@@ -26,4 +26,4 @@ The real issue was the order in which everything was being rendered -- the SVG l
 </svg>
 {% endhighlight %}
 
-If you're trying to incorporate SVG UI elements to your Three.js scene, I hope this helped. It took us a while to search for the right combination of words, so I hope this comes to your more quickly than it did for us! 
+If you're trying to incorporate SVG UI elements to your Three.js scene, I hope this helped. It took us a while to search for the right combination of words, so I hope this comes to you more quickly than it did for us! 
