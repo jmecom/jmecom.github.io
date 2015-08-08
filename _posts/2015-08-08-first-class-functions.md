@@ -10,24 +10,24 @@ object-oriented programs. I'll show some simple examples followed by an applicat
 that I've used in a hobby project. But first let's take a look at some basic uses.
 
 Lets define some functions.
-```
+{% highlight python %}
 def foo(x):
     print('Foo: ' + str(x))
 
 def bar(y):
     print('Bar: ' + str(y))
-```
+{% endhighlight %}
 
 You can save functions to variables, and call them from those variables.
-```
+{% highlight python %}
 f = foo
 f(3)
 # Output
 # Foo: 3
-```
+{% endhighlight %}
 
 You can store functions in data structures, such as lists.
-```
+{% highlight python %}
 l = [1, 2, 3, f, foo]
 for e in l:
     print(e)
@@ -39,33 +39,33 @@ for e in l:
 # <function foo at 0x107120c80>
 #
 # Note, same address
-```
+{% endhighlight %}
 
 You can also call functions from data structures. In this example, the value at each
 key is a function. So, you can mentally replace `d[k]` with `foo` or `bar`, and append
 the parens + argument(s), just like a normal function call.
-```
+{% highlight python %}
 d = { 'apple': foo, 'pie': bar }
 for k in d.keys():
     d[k]('Note the syntax')
 # Output
 # Foo: 'Note the syntax'
 # Bar: 'Note the syntax'
-```
+{% endhighlight %}
 
 Lastly, you can pass functions as arguments to other functions.
-```
+{% highlight python %}
 >>> def map(list, func):
 ...     return [func(e) for e in list]
 ...
 >>> map([1, 2, -3, 4, -3], abs)
 [1, 2, 3, 4, 3]
-```
+{% endhighlight %}
 
 That covers some of the uses of first-class functions. How can we use them in our
 real programs though? Lets take a look at a use-case I found while implementing Virtual6502.
 
-## An application - Virtual6502
+### An application - Virtual6502
 Virtual6502 emulates the NES' 6502 CPU. To do this, it must implement each instruction in the
 6502's instruction set. I chose to implement each instruction as its own function.
 Now, each instruction has an `opcode`, which is just a number that corresponds to it.
@@ -85,7 +85,7 @@ each instruction at the index of its opcode!
 
 For an example, suppose we had a CPU with just two instructions: `A` and `B`, with opcodes
 `0` and `1` respectively. Then we can do the following:
-```
+{% highlight python %}
 def A(args):
     # Do the stuff specified by the A instruction
     # ...
@@ -99,6 +99,6 @@ instruction_functions = [A, B] # A at 0, B at 1
 # Later, in our fetch and execute cycle, we can get
 # the opcode and arguments, and then execute the instruction:
 instruction_functions[opcode](args)
-```
+{% endhighlight %}
 
 The solution turns out to be simple and readable!
