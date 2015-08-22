@@ -1,3 +1,8 @@
+---
+title: "Designing a programming language"
+tags: [program language design, compilers]
+---
+
 I've had the idea to create a programming language for several months now, but never got around to starting.
 I was never sure what the syntax should look like, what the compilation target would be, or if I'd rather just devote my time to other projects.
 
