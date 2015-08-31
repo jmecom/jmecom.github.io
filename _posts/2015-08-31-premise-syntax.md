@@ -9,22 +9,24 @@ research which tools I would use. Lets hop right into a discussion of the premis
 ### Premise
 The aim of this language is to take the best parts of Javascript and Python, targeting
 the web. Given this, the guiding language features will be:
-  * Prototypal Inheritance
-    * For a great discussion on this, see http://stackoverflow.com/questions/2800964/benefits-of-prototypal-inheritance-over-classical
-  * Objects, object literal syntax 
-  * First-class functions 
-  * Python-esque strong + dynamic type system
-  * Python-esque coherent and intuitive standard library
+
+  - Prototypal Inheritance
+    - For a great discussion on this, see http://stackoverflow.com/questions/2800964/benefits-of-prototypal-inheritance-over-classical
+  - Objects, object literal syntax 
+  - First-class functions 
+  - Python-esque strong + dynamic type system
+  - Python-esque coherent and intuitive standard library
 
 There are certainly languages similar to this - Coffeescript or other compile-to-JS languages may come to mind. However, there are still key differences between what I propose and those languages:
-  * My compilation target is not JS 
-  * I don't aim to add classical inheritance, which most compile-to-JS languages do 
-  * Syntax 
+  
+  - My compilation target is not JS 
+  - I don't aim to add classical inheritance, which most compile-to-JS languages do 
+  - Syntax 
 
 At the end of the day, the aim of the language I propose isn't to be innovative. I want to develop an elegant, simple, and sane language for the web. So, lets take a look at some syntax!
 
 ### Syntax 
-```python
+{% highlight python %}
 ### Some basics
 # Some assignments
 a = 2
@@ -59,7 +61,7 @@ print(a.area)  # 314
 
 b = Circle.init(5)
 print(b.area)  # 78.5
-```
+{% endhighlight %}
 
 The syntax will change with time, but the goal is to keep it relatively similar
 to the above.
