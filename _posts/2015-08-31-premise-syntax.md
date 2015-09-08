@@ -72,7 +72,7 @@ Currently, I plan on using C++, Flex for the scanner generator, and Yacc for the
 I've decided to go with these choices because I'm familiar with the tool-chain, there is a lot
 of documentation, and they are robust choices that can handle mature languages.  
 
-### Next week's goal
+### Next goal
 * Come up with a *name* for the language, and retag old posts with the name
 * Specify the grammar for a subset of the language
 * Stretch - begin work on the scanner
