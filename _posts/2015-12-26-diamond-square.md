@@ -29,35 +29,34 @@ Now let's look at some pseudocode to understand the details a bit better.
 
 {% highlight python %}
 def diamond_square(width, height):
-	# Set up the array of z-values
-	let A = a width*height 2D array of 0s
-	pre-seed four corners of A with a value
+  # Set up the array of z-values
+  let A = a width*height 2D array of 0s
+  pre-seed four corners of A with a value
 
-	let step_size = width - 1
-	let r = a random number within a range
+  let step_size = width - 1
+  let r = a random number within a range
 
-	# Main loop
-	while step_size > 1:
-		loop over A
-			do diamond_step for each square in A 
+  # Main loop
+  while step_size > 1:
+    loop over A
+      do diamond_step for each square in A 
 
-		loop over A
-			do square_step for each diamond in A
+    loop over A
+      do square_step for each diamond in A
 
-		step_size /= 2
-		reduce random range for r
+    step_size /= 2
+    reduce random range for r
 
 def diamond_step(x, y, step_size, r):
-	# Note: this assumes x, y is top-left of square
-	#       but you can implement it how you like
-	let avg = average of square corners step_size apart
-	A[x + step_size/2][y + step_size/2] = avg + r
+  # Note: this assumes x, y is top-left of square
+  #       but you can implement it how you like
+  let avg = average of square corners step_size apart
+  A[x + step_size/2][y + step_size/2] = avg + r
 
 def square_step(x, y, step_size, r):
-	# Note: x, y here are the middle of a diamond
-	let avg = average of four corners of diamond 
-	A[x][y] = avg + r
-
+  # Note: x, y here are the middle of a diamond
+  let avg = average of four corners of diamond 
+  A[x][y] = avg + r
 {% endhighlight %}
 
 Now, the tricky part of implementing DS are the corner-cases found in the array manipulation, which
