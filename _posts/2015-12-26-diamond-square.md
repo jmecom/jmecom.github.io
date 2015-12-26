@@ -62,8 +62,7 @@ Now, the tricky part of implementing DS are the corner-cases found in the array 
 the pseudocode doesn't really highlight. But, it's a good starting point. I recommend trying to implement DS yourself before looking at working source code - it'll be more rewarding and a better learning experience. However, here's an [implementation I wrote](https://github.com/jmecom/procedural-landscapes) and here's [another (cleaner, in my opinion) version](http://www.bluh.org/code-the-diamond-square-algorithm/).
 
 ## Additional Resources
-I found several nice resources for learning about procedural terrain generation while implementing this
-little project. Hopefully they're of use to you as well.
+I found several nice resources for learning about procedural terrain generation while implementing this little project. Hopefully they're of use to you as well.
 
 [StackOverflow post about getting started with procedural generation](http://stackoverflow.com/questions/155069/how-does-one-get-started-with-procedural-generation)
 
