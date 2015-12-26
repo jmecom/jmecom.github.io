@@ -57,7 +57,7 @@ def square_step(x, y, step_size, r):
 	let avg = average of four corners of diamond 
 	A[x][y] = avg + r
 
-{% end highlight %}
+{% endhighlight %}
 
 Now, the tricky part of implementing DS are the corner-cases found in the array manipulation, which
 the pseudocode doesn't really highlight. But, it's a good starting point. I recommend trying to implement DS yourself before looking at working source code - it'll be more rewarding and a better learning experience. However, here's an [implementation I wrote](https://github.com/jmecom/procedural-landscapes) and here's [another (cleaner, in my opinion) version](http://www.bluh.org/code-the-diamond-square-algorithm/).
