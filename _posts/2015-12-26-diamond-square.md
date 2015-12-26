@@ -68,4 +68,3 @@ little project. Hopefully they're of use to you as well.
 [StackOverflow post about getting started with procedural generation](http://stackoverflow.com/questions/155069/how-does-one-get-started-with-procedural-generation)
 
 [A list of procedural generation algorithms](http://pcg.wikidot.com/category-pcg-algorithms)
-
