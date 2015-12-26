@@ -1,3 +1,4 @@
+---
 title: "Procedural Terrain Generation: Diamond-Square"
 tags: [terrain, procedural, generation, diamond-square, algorithms, computer graphics]
 ---
