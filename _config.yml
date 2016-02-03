@@ -1,38 +1,41 @@
-baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
-url: "jmecom.github.io" # the base hostname & protocol for your site.
-title: "jmecom.github.io"
+# Build settings
+permalink   : /blog/:year/:title/
+markdown    : kramdown
+highlighter : pygments
 
+paginate: 3
+paginate_path: "/blog/page/:num/"
+comments: true
 
-paginate: 3 #articles per page
-paginate_path: /blog/page:num #makes pagination working
+source: source
+destination: _site
+sass:
+  sass_dir: _scss
+  style: compressed # expanded
 
+# SEO settings
+title: jmecom.github.io
+description: "Personal site of Jordan Mecom"
+url: http://jmecom.github.io
+baseurl: "/end2end"
 
-#contacts
-git: "https://github.com/jmecom"  #Add your github url here.
-stackoverflow: "http://stackoverflow.com/users/4421907/jmecom" #Add your stackoverflow url here.
+# Author settings
+author:
+  name      : Jordan Mecom
+  thumb     : /images/me.jpg
+  url       : http://jmecom.github.io
+  github    : http://github.com/jmecom
+  linkedin  : http://linkedin.com/in/jmecom
 
-gems:
-  - jekyll-sitemap
+# navbar pages
+navbar:
+  - slug: about
+    title: About
+  - slug: resume
+    title: Resume
+  - slug: projects
+    title: Projects
+  - slug: blog
+    title: Blog
 
-# This is used by feed.xml. Uncomment if you want to use it.
-# description: "..."
-
-exclude:
-  - "README.md"
-  - "CHANGELOG.md"
-  - "Gemfile"
-  - "Gemfile.lock"
-permalink: :title
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
