@@ -7,6 +7,9 @@ paginate: 3
 paginate_path: "/blog/page/:num/"
 comments: true
 
+gems:
+  - jekyll-paginate
+
 source: source
 destination: _site
 sass:
@@ -14,7 +17,7 @@ sass:
   style: compressed # expanded
 
 # SEO settings
-title: jmecom.github.io
+title: jmecom
 description: "Personal site of Jordan Mecom"
 url: http://jmecom.github.io
 baseurl: "/end2end"
