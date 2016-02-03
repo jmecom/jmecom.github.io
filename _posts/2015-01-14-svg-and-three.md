@@ -1,8 +1,9 @@
 ---
+layout: post
 title: "Rendering SVG elements over a Three.js canvas"
 tags: [three.js, javascript, SVG]
+date: 2015-1-14
 ---
-
 I'll start off this blog with a quick post describing a bug I recently faced when working on [Star Graph](http://jmecom.github.io/GameUniverse), a Three.js application that renders new video game releases on Metacritic as stars in a galaxy. Star Graph presents a pop-up menu to the user when they click on a star, giving detailed information about the game that the star represents. Alice Wang (my friend and colleague for this project) and I decided we wanted a line going from the middle of the clicked star to the pop-up menu. Drawing that using [SVG line](http://www.w3schools.com/svg/svg_line.asp) seemed simple enough.
 
 However, we discovered that the SVG elements we were drawing were appearing below the Three.js scene. The fix seemed straightforward: change the z-index of the line. But, this doesn't work. After [some reading](http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html#SVG_in_HTML) we discovered that SVG elements have their own DOM, and z-index doesn't apply. 

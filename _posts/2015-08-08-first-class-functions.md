@@ -1,5 +1,7 @@
 ---
+layout: post
 title: "First class functions (in Python)"
+date: 2015-08-08
 tags: [python, functional programming, functions, virtual6502]
 ---
 
