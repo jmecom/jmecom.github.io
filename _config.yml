@@ -10,7 +10,7 @@ comments: true
 gems:
   - jekyll-paginate
 
-source: source
+# source: source
 destination: _site
 sass:
   sass_dir: _scss
@@ -20,7 +20,8 @@ sass:
 title: jmecom
 description: "Personal site of Jordan Mecom"
 url: http://jmecom.github.io
-baseurl: "/end2end"
+# baseurl: "/end2end"
+baseurl: ""
 
 # Author settings
 author:
