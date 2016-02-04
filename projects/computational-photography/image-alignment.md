@@ -99,3 +99,4 @@ I used Photoshop to create fake glass negatives from photos that I took in San F
 Unaligned            |  Aligned
 :-------------------------:|:-------------------------:
 ![]({{ jmecom.github.io }}/images/gorskii-collection/un-sf1.jpg)  |  ![]({{ jmecom.github.io }}/images/gorskii-collection/sf1.jpg)
+![]({{ jmecom.github.io }}/images/gorskii-collection/un-hayes.jpg)  |  ![]({{ jmecom.github.io }}/images/gorskii-collection/hayes.jpg)
