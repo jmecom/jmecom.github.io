@@ -4,11 +4,15 @@ title: "Image alignment with pyramids"
 date: 2016-02-04
 ---
 
+### Problem
+
+The Prokudin-Gorskii image collection from the Library of Congress is a series of glass plate negative photographs taken by Sergei Mikhailovich Prokudin-Gorskii. To view these photographs in color digitally, one must overlay the three images and display them in their respective RGB channels. However, due to the technology used to take these images, the three photos are not perfectly aligned. The goal of this project is to automatically align, clean up, and display a single color photograph from a glass plate negative.
+
 ___
 
 ### Algorithm
 
-I developed two algorithms to align images from the Prokudin-Gorskii collection: `single-scale alignment` and `multi-scale alignment` using Gaussian image pyramids. Single scale alignment is, essentially, brute force. The algorithm specifically does the following
+I developed two algorithms to align images from the collection: `single-scale alignment` and `multi-scale alignment` using Gaussian image pyramids. Single scale alignment is, essentially, brute force. The algorithm specifically does the following
 
 {% highlight python %}
 single_scale_align:
@@ -18,9 +22,11 @@ single_scale_align:
   perform the alignment and merge the images 
 {% endhighlight %}
 
-I used two different methods to find the best shift. The first (called `findshift`) simply tries to align an image with an anchor (the blue channel) by testing all possible displacements within a range, scoring each displacement, and using the best. The score is calculated by taking the sum of squared distance between the two images. The second (called `findshift_edges`) is very similar, but instead of scoring the images directly it first creates binary images highlighting the edges using the Canny edge detector. It then finds scores, still using sum of squred distances, the edge detected images. This approach almost always worked better.
+I used two different methods to find the best shift. The first (called `findshift`) simply tries to align an image with an anchor (the blue channel) by testing all possible displacements within a range, scoring each displacement, and using the best. The score is calculated by taking the sum of squared difference between the two images. The optimal score for this error function is zero: an image's sum of squared difference with itself is zero.
 
-Multi-scale alignment is very similar to single-scale. The only difference is that the best shift is found using image pyramids. The idea is to blur and resultize the input image by a factor of two up to N times. At the coarsest level, the best shift is found using findshift_edges with a displacement range of 15. Otherwise, the best shift is found recursively, multiplied by two, and then applied to S. Lastly, the best shift is refined using findshift_edges with a range of 2.
+The second (called `findshift_edges`) is very similar, but instead of scoring the images directly it first creates binary images highlighting the edges using Canny edge detection. It then scores, still using sum of squred differences, the edge detected images. This approach almost always worked better.
+
+Multi-scale alignment is very similar to single-scale. The only difference is that the best shift is found using image pyramids.
 
 In pseudocode, the pyramid shift finding algorithm works as follows
 
@@ -37,6 +43,17 @@ pyramid_find_shift (anchor image A, shifted image S, pyramid depth N):
 
     let best_shift be best_shift + findshift_edges(A, S, 2)
 {% endhighlight %}
+
+### Performance
+
+The performance of the algorithms is summarized in the table below.
+
+|                | Single-scale  | Multi-scale
+: ------------- :|:-------------:|: ----------:
+| findshift      | 5 seconds     | 8 seconds
+| findshift_edges| 34 seconds    | 92 seconds
+
+Edge detection greatly slows the algorithm down, but for certain images gives better results. This is discussed further in the extra-credit section below.
 
 ___
 
@@ -55,6 +72,12 @@ Unaligned             |  Aligned
 
 Unaligned images are displayed before aligned images. To view full images, right click and "view image". 
 
+![]({{ jmecom.github.io }}/images/gorskii-collection/big-un-town.jpg)  
+![]({{ jmecom.github.io }}/images/gorskii-collection/big-town.jpg)  
+![]({{ jmecom.github.io }}/images/gorskii-collection/big-un-church.jpg)  
+![]({{ jmecom.github.io }}/images/gorskii-collection/big-church.jpg)  
+![]({{ jmecom.github.io }}/images/gorskii-collection/big-un-guy.jpg)  
+![]({{ jmecom.github.io }}/images/gorskii-collection/big-guy.jpg)  
 ![]({{ jmecom.github.io }}/images/gorskii-collection/big-un-field.jpg)  
 ![]({{ jmecom.github.io }}/images/gorskii-collection/big-field.jpg)
 ![]({{ jmecom.github.io }}/images/gorskii-collection/big-un-3girls.jpg) 
@@ -92,6 +115,10 @@ Uncropped, `findshift`             |  Uncropped, `findshift_edges`
 :-------------------------:|:-------------------------:
 ![]({{ jmecom.github.io }}/images/gorskii-collection/uncropped-findshift-girl.jpg)  |  ![]({{ jmecom.github.io }}/images/gorskii-collection/uncropped-edges_findshift-girl.jpg)
 
+The difference is not as great when the images are cropped first. The most likely explanation for `findshift`'s failure is an attempt to line up border colors that overpowers the attempt to line up the actual image. `findshift_edges` probably detects the edges of the girl very effectively and values lining her up more. 
+
+It's also worth noting that I tried other edge detection algorithms, such as Sobel, but Canny seemed to have the best results.
+
 ### Fake glass negatives
 
 I used Photoshop to create fake glass negatives from photos that I took in San Francisco. The result of running my algorithm on these images is below.
@@ -100,3 +127,16 @@ Unaligned            |  Aligned
 :-------------------------:|:-------------------------:
 ![]({{ jmecom.github.io }}/images/gorskii-collection/un-sf1.jpg)  |  ![]({{ jmecom.github.io }}/images/gorskii-collection/sf1.jpg)
 ![]({{ jmecom.github.io }}/images/gorskii-collection/un-hayes.jpg)  |  ![]({{ jmecom.github.io }}/images/gorskii-collection/hayes.jpg)
+
+### Analysis and conclusion
+
+Overall, the algorithms perform quite well especially when edge detection is used. Some images above don't quite have perfect results, such as the man in the field, but do better than not aligning at all. The most notable failure case was the one described above in extra-credit of the girl standing in the field. However, after cropping and edge detection is added, that photo ends up being one of the best aligned images.
+
+If I were to try to improve the algorithm, I'd like to try the following
+
+* 1) Better cropping. The cropping of the fuzzy black borders was okay, but could be improved.
+
+* 2) Try using gradients. Edge detection helped the algorithm quite a bit, so I'm curious about what gradients may do.
+
+* 3) Recoloration. Many photos have distorted colors, so automatically rebalancing the colors could noticable improve image quality.
+
