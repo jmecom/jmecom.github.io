@@ -136,7 +136,5 @@ If I were to try to improve the algorithm, I'd like to try the following
 
 * 1) Better cropping. The cropping of the fuzzy black borders was okay, but could be improved.
 
-* 2) Try using gradients. Edge detection helped the algorithm quite a bit, so I'm curious about what gradients may do.
-
-* 3) Recoloration. Many photos have distorted colors, so automatically rebalancing the colors could noticable improve image quality.
+* 2) Recoloration. Many photos have distorted colors, so automatically rebalancing the colors could noticable improve image quality.
 
