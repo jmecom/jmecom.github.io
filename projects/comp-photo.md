@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Computational Photography
+title: Computational Photography and Computer Vision
 ---
 
 Here you'll find all of my computational photography or computer vision projects.
