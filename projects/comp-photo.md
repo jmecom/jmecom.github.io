@@ -10,3 +10,5 @@ Here you'll find all of my computational photography or computer vision projects
 [Gradient domain fusion](../computational-photography/gradient-domain-fusion)
 
 [Image alignment with pyramids](../computational-photography/image-alignment)
+
+[Video Textures](../computational-photography/video-textures)
