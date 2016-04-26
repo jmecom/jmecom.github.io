@@ -12,7 +12,7 @@ We plan to to implement [image analogies](http://mrl.nyu.edu/publications/image-
 
 Image analogies has many different applications, such texture synthesis, style-transfer, image colorization, and more. Because each application requires some modifications to the general algorithm, we'll develop this project in stages. 
 
-First, we'll implement toy filters (blurring, embossing, etc.) to ensure our algorithm works. Our mian goal is to implement style transfer / artistic filters. From there, we can work on other applications, depending on time. We probably have more ideas here than time to implement them well, so we appreciate any feedback letting us know which ideas havepotential.
+First, we'll implement toy filters (blurring, embossing, etc.) to ensure our algorithm works. Our mian goal is to implement style transfer / artistic filters. From there, we can work on other applications, depending on time. We probably have more ideas here than time to implement them well, so we appreciate any feedback letting us know which ideas have potential.
 
 ### Input data and expected results
 
