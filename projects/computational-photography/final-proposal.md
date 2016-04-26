@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Proposal - Image analogies
+title: Proposal - Image Analogies
 tags: [comp-photo, image, analogies, matlab]
 date: 2016-04-26
 ---
@@ -10,7 +10,9 @@ date: 2016-04-26
 ### Proposal
 We plan to to implement [image analogies](http://mrl.nyu.edu/publications/image-analogies/), which is a framework for processing images by example. The algorithm takes in 3 inputs: A, A' and B and aims to output B' so that A' and B' are analagous (A:A' :: B:B').
 
-Image analogies has many different applications, such texture synthesis, style-transfer, image colorization, and more. Because each application requires some modifications to the general algorithm, we'll develop this project in stages. First, we'll implement toy filters (blurring, embossing, etc.) to ensure our algorithm works. Our mian goal is to implement style transfer / artistic filters. From there, we can work on other applications, depending on time. 
+Image analogies has many different applications, such texture synthesis, style-transfer, image colorization, and more. Because each application requires some modifications to the general algorithm, we'll develop this project in stages. 
+
+First, we'll implement toy filters (blurring, embossing, etc.) to ensure our algorithm works. Our mian goal is to implement style transfer / artistic filters. From there, we can work on other applications, depending on time. We probably have more ideas here than time to implement them well, so we appreciate any feedback letting us know which ideas havepotential.
 
 ### Input data and expected results
 
@@ -74,3 +76,24 @@ A and A':
 ![A and A'](http://i.imgur.com/aEkR4nQ.jpg)
 
 Here we'll attempt to re-render faces to be cutesy. We aren't sure what types of input features will work best for this, so we'll have to experiment. If we can find good parameters and select features well then we think the results here could be quite good.
+
+#### Video summary
+
+A: 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JAAaUxObdFk" frameborder="0" allowfullscreen> </iframe>
+
+A': ![A'](http://i.imgur.com/bI4ilhi.jpg)
+
+The process of summarizing a video with a single image involves many of the same mathematical models as texture synthesis and blending, both of which the original paper touched on and seemed to perform quite well.  We will attempt to interpret a video into the framework and model the image summary process performed above on several source videos.  We expect that once we have appropriately transformed our input videos into the framework, we should be able to achieve positive results.  Finding videos that yield pleasing results can be a challenge in itself, so we'll have to do some searching to find some good videos upon which to test this method (probably passing them through the original video summary method to verify).
+
+
+#### Floor plan renders
+
+A and A': ![A and A'](http://i.imgur.com/7vwPmDa.jpg)
+
+B: ![B](http://i.imgur.com/Rb1SJPV.jpg)
+
+
+We will also attempt to take a 2d floor plan drawing and render it in a 3d style as seen in the source image above.  We will test on various different floor plan samples, such as the one shown, to see if any plans we can find will produce convincing results. This idea probably won't work (at all) but it could be interesting to try.
+
