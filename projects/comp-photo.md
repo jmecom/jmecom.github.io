@@ -13,4 +13,6 @@ Here you'll find all of my computational photography or computer vision projects
 
 [Video Textures](../computational-photography/video-textures)
 
-[Final project](../computational-photography/final-proposal)
+[Final proposal](../computational-photography/final-proposal)
+
+[Final project](../computational-photography/final-project)
