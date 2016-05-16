@@ -22,7 +22,7 @@ Image analogies provides a framework to learn complex, non-linear image filters 
 #### Video textures
 
 <p align="center">
-<img src="../../../images/video-textures/city-4.gif"></img>
+<img src="../../../images/video-textures/snow.gif"></img>
 </p>
 
 Video textures are "infinitely-repeating" images that capture the essence of a particular video. Read more [here](/projects/computational-photography/video-textures/)
