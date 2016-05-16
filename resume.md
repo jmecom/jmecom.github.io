@@ -3,8 +3,8 @@ layout: page
 permalink: /resume/
 ---
 
-# Resume
-I currently work on Caviar at Square as a Software Engineer. For a complete resume, see my [LinkedIn](https://www.linkedin.com/in/jmecom).
+<h3> Resume </h3>
+I currently work on Caviar at Square as a Software Engineer. For a complete resume, see my <a href="https://www.linkedin.com/in/jmecom">LinkedIn</a>.
 
 <!-- <div class="text-center">
   <h2>Jordan Mecom</h2>
