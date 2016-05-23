@@ -15,7 +15,7 @@ sass:
   style: compressed # expanded
 
 # SEO settings
-title: jmecom
+title: Jordan Mecom
 description: "Personal site of Jordan Mecom"
 url: http://jmecom.github.io
 # baseurl: "/end2end"
@@ -31,8 +31,6 @@ author:
 
 # navbar pages
 navbar:
-  - slug: about
-    title: About
   - slug: resume
     title: Resume
   - slug: projects
