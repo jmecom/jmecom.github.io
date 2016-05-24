@@ -85,12 +85,6 @@ Below is a gallery displaying some of my recent work.
   </div>
 
   <div class="col-xs-5 col-sm-3 col-md-3">
-    <a href="images/chip8-maze.png" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/chip8-maze-small.png)"></div>
-    </a>
-  </div>
-
-  <div class="col-xs-5 col-sm-3 col-md-3">
     <a href="images/gorgon2.PNG" class="thumbnail img-preview-thumb">
       <div class="img-preview" style="background:url(images/gorgon2.PNG) center center"></div>
     </a>
