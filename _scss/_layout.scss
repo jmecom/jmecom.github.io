@@ -18,60 +18,14 @@ body {
   float: right;
 }
 
+.img-preview-thumb {
+  height: 160px;
+  width: 160px;
+}
+
 .img-preview { 
   height: 150px; 
   width: 150px; 
-}
-
-.image-grid {
-  /* Source: http://www.sitepoint.com/using-modern-css-to-build-a-responsive-image-grid/ */
-
-  font-size: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* or space-around */
-
-  .hover-color {
-    background-color: white;
-    display: inline-block;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
-  }
-
-  .hover-color:hover {
-      opacity: .55;
-  }
-
-  a {
-    font-size: 12px; 
-    color: $dark-gray-color;
-    text-align: center;
-    display: inline-block;
-    margin-bottom: 8px;
-    width: calc(50% - 4px);
-    margin-right: 8px;
-  }
-
-  a:nth-of-type(2n) {
-    margin-right: 0;
-  }
-
-  @media screen and (min-width: 50em) {
-    a {
-      width: calc(25% - 6px);
-    }
-
-    a:nth-of-type(2n) {
-      margin-right: 8px;
-    }
-
-    a:nth-of-type(4n) {
-      margin-right: 0;
-    }
-  }
 }
 
 .container {
@@ -116,7 +70,7 @@ body {
     text-transform: lowercase;
   }
 
-  .navbar {
+  .navbar2 {
     float: right;
   }
 
@@ -127,6 +81,8 @@ body {
     &:focus,
     &:active {
       color: $dark-gray-color;
+      text-decoration: none;
+      outline: 0;
     }
   }
 
@@ -195,7 +151,7 @@ body {
   }
 }
 
-.navbar {
+.navbar2 {
   li, a {
     display: inline-block;
   }

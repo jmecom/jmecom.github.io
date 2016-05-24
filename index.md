@@ -4,7 +4,11 @@ layout: page
 
 # Welcome!
 
-<img class="avatar" src="images/me.jpg">
+<div class="avatar">
+  <a href="images/me-big.jpg" class="thumbnail">
+    <img class="avatar" src="images/me.jpg">
+  </a>
+</div>
 
 Hi, I'm Jordan Mecom. I'm a Software Engineer at Square, working on Caviar. 
 I graduated from Washington University in St. Louis in May 2016. Computer vision and machine learning are at the center of my interests, but I also love computational photography and computer graphics. When I'm not writing code, I play the drums, watch eSports, play games, and make digital art. 
@@ -18,63 +22,45 @@ To take a look at my past work, head over to my [resume](/resume). Feel free to 
 
 Below is a gallery displaying some of my recent work.
 
+<div class="row">
+  <div class="col-sm-6 col-md-3">
+    <a href="images/image-analogies/results/artout.jpg" class="thumbnail">
+      <div class="img-preview" style="background:url(images/image-analogies/results/artout.jpg) center"></div>
+    </a>
+  </div>
 
-<div class="image-grid">
+   <div class="col-sm-6 col-md-3">
+    <a href="images/image-analogies/results/colorado.jpg" class="thumbnail">
+      <div class="img-preview" style="background:url(images/image-analogies/results/colorado.jpg) center"></div>
+    </a>
+  </div>
 
-  <a href="images/image-analogies/results/artout.jpg">
-    <figure>
-      <div class="hover-color">
-        <div class="img-preview" style="background:url(images/image-analogies/results/artout.jpg) center"></div>
-      </div>
-      <figcaption>Style transfer</figcaption>
-    </figure>
-  </a>
+   <div class="col-sm-6 col-md-3">
+    <a href="images/gradient-domain-fusion/sf-npr-big.png" class="thumbnail">
+      <div class="img-preview" style="background:url(images/gradient-domain-fusion/scale-sf.png)"></div>
+    </a>
+  </div>
 
-  <a href="images/image-analogies/results/colorado.jpg">
-    <figure>
-      <div class="hover-color">
-        <div class="img-preview" style="background:url(images/image-analogies/results/colorado.jpg) center"></div>
-      </div>
-      <figcaption>Style transfer</figcaption>
-    </figure>
-  </a>
+   <div class="col-sm-6 col-md-3">
+    <a href="images/gradient-domain-fusion/bb.png" class="thumbnail">
+      <div class="img-preview" style="background:url(images/gradient-domain-fusion/scale-bb.png)"></div>
+    </a>
+  </div>
 
-  <a href="images/gradient-domain-fusion/sf-npr-big.png">
-    <figure>
-      <div class="hover-color">
-        <div class="img-preview" style="background:url(images/gradient-domain-fusion/scale-sf.png) " ></div>
-       </div>
-      <figcaption>NPR rendering</figcaption>
-    </figure>
-  </a>
+  <div class="col-sm-6 col-md-3">
+    <a href="images/texture-synthesis/japanese-wallpaper-mincut.png" class="thumbnail">
+      <div class="img-preview" style="background:url(images/texture-synthesis/japanese-wallpaper-mincut.png)"></div>
+    </a>
+  </div>
 
-  <a href="images/gradient-domain-fusion/bb.png">
-    <figure>
-      <div class="hover-color">
-        <div class="img-preview" style="background:url(images/gradient-domain-fusion/scale-bb.png) " ></div>
-      </div>
-    </figure>
-    <figcaption>NPR rendering</figcaption>
-  </a>
+  <div class="col-sm-6 col-md-3">
+    <a href="images/texture-synthesis/starfield-mincut.png" class="thumbnail">
+      <div class="img-preview" style="background:url(images/texture-synthesis/starfield-mincut.png)"></div>
+    </a>
+  </div>
+</div>
+
  
-  <a href="images/texture-synthesis/japanese-wallpaper-mincut.png">
-    <figure>
-      <div class="hover-color">
-        <div class="img-preview" style="background:url(images/texture-synthesis/japanese-wallpaper-mincut.png)"></div>
-      </div>
-    </figure>
-    <figcaption>Texture synthesis</figcaption>
-  </a>
-  
-  <a href="images/texture-synthesis/starfield-mincut.png">
-    <figure>
-      <div class="hover-color">
-        <div class="img-preview" style="background:url(images/texture-synthesis/starfield-mincut.png)"></div>
-      </div>
-    </figure>
-    <figcaption>Texture synthesis</figcaption>
-  </a>
-
   <a href="images/ds-example-small.png">
     <figure>
       <div class="hover-color">
@@ -165,6 +151,6 @@ Below is a gallery displaying some of my recent work.
     <figcaption>GGJ14: Fae</figcaption>
   </a>
 
-</div>
+</div> -->
 
 
