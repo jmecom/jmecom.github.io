@@ -18,6 +18,11 @@ body {
   float: right;
 }
 
+.lead {
+  text-align: justify;
+  font-size: 16px;
+}
+
 .img-preview-thumb {
   height: 160px;
   width: 160px;
@@ -278,6 +283,8 @@ body.home {
       &:active,
       &:focus {
         color: $primary-color;
+        text-decoration: none;
+        outline: 0;
       }
     }
   }
