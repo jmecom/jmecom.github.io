@@ -5,8 +5,9 @@ tags: [comp-photo, image, analogies, matlab]
 date: 2016-05-11
 ---
 
-*By Jordan Mecom, Alice Wang, and Will Hardy.*
+*Developed by Jordan Mecom, Alice Wang, and Will Hardy.*
 
+View the repository [here.](https://github.com/jmecom/image-analogies/)
 
 <html><div style="text-align:center"><img src ="../../../images/image-analogies/header2.PNG" /></div></html>
 
