@@ -5,11 +5,13 @@ tags: [comp-photo, image, matlab]
 date: 2016-03-22
 ---
 
+*Developed by Alice Wang and Jordan Mecom.*
+
+View the repository [here](https://github.com/jmecom/image-quilting/).
+
 Texture synthesis is the process of generating a larger texture image from a smaller source image. This project generates textures using an idea called image quilting, developed by Alexei A. Efros and William T. Freeman in their SIGGRAPH 2001 paper called [Image Quilting for Texture Synthesis and Transfer](http://graphics.cs.cmu.edu/people/efros/research/quilting/quilting.pdf). The idea is to stich together a larger texture from blocks (size specified by user) sampled from the source texture. To generate seamless textures, blocks are first selected such that they agree with their neighbor along some overlapping region. Then, the overlapping region is cut to minmize the sum of squared differences.
 
 Texture transfer is a similar problem in which a taget image is rendered using a source texture. This algorithm follows the same process as texture synthesis, but with the additional constraint of having each block match a target image using some correspondence map. Often, the map is the luminance of the target image. The final image retains the low frequency details of the target image but it composed of the texture instead. 
-
-Alice Wang and I worked on this lab together.
 
 
 ## Approach and Algorithm Analysis
