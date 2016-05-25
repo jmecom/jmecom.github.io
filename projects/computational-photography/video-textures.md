@@ -11,6 +11,8 @@ date: 2016-04-05
 
 *Implemented by Jordan Mecom and Alice Wang.*
 
+#### [View the repository here.](https://github.com/Ahris/video-texture)
+
 This project implements the paper [''Video Textures'' by Schodl, Szeliski, Salesin, and Essa](http://www.cc.gatech.edu/cpl/projects/videotexture/SIGGRAPH2000/index.htm). The aim is to create a ''new type of medium'' called a *video texture*, which is ''somewhere between a photograph and a video''. The idea is to input a video which has some repeated motion (the *texture*), such as a flag waving, rain, or a candle flame. The output is a new video that infinitely extends the original video in a seameless way. In practice, the output isn't really infinte, but is instead looped using a video player and is sufficiently long as to appear to never repeat.
 
 We'll describe the algorithm in detail, and then share results and failure cases.
