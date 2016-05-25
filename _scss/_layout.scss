@@ -14,6 +14,7 @@ body {
   background: $base-background-color url("../images/bg-pattern.png");
 }
 
+// Home page
 .avatar {
   float: right;
 }
@@ -23,6 +24,8 @@ body {
   font-size: 16px;
 }
 
+// Fixed-size gallery on home page, with
+// 150x150 thumbnails.
 .img-preview-thumb {
   height: 160px;
   width: 160px;
@@ -31,6 +34,54 @@ body {
 .img-preview { 
   height: 150px; 
   width: 150px; 
+}
+
+// Projects gallery
+.thumbnail img { 
+  // 191.35 is the size of the first two
+  // images in the gallery, and it happened to look good.
+  // Maybe change this at some point?
+
+  // TODO, but it looks bad on tablets. Come up with a better fix?
+  height: 191.35px; 
+}
+
+.projects {
+  .thumbnail {
+    margin-bottom: 10px;
+  }
+}
+
+.project-description {
+  text-align: center;
+
+  h4 {
+    color: $gray-color;
+    font-size: 16px;
+    font-style: bold;
+    margin-bottom: 5px;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $primary-color;
+      text-decoration: none;
+      outline: 0;
+    }
+  }
+
+  a {
+    &:hover,
+    &:active,
+    &:focus {
+      color: $primary-color;
+      text-decoration: none;
+      outline: 0;
+    }
+  }
+
+  p {
+    font-size: 13px;  
+  }
 }
 
 .container {
@@ -307,6 +358,8 @@ body.home {
     &:active,
     &:focus {
       color: $primary-color;
+      text-decoration: none;
+      outline: 0; 
     }
   }
 

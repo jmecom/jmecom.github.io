@@ -5,75 +5,148 @@ permalink: /projects/
 
 # Projects
 
-### Computer vision, graphics, photography
+Below are some projects I've worked on in my spare time. 
 
-#### Non-photorealistic rendering
+<div class="row projects">
+  <div class="col-md-6">
+    <a class="thumbnail" href="/projects/computational-photography/image-analogies/">
+      <img src="../images/image-analogies/results/artout.jpg">
+    </a>
+    <div class="project-description">
+    <a href="/projects/computational-photography/image-analogies/">
+      <h4>Image Analogies</h4>
+    </a>
+    <p>Image analogies provides a framework to learn complex, non-linear image filters with one training example.</p>
+    </div>
+  </div>  
 
-<html><div style="text-align:center"><img src ="../../../images/gradient-domain-fusion/sf-npr-big.png" /></div></html>
-
-This project uses Poisson blending to (1) combine images, and (2) to re-render them non-photorealistically. The full writeup is [here](http://ahris.github.io/articles/gradient-domain-fusion/).
-
-#### Image analogies
-
-<html><div style="text-align:center"><img src ="../../../images/image-analogies/header2.PNG" /></div></html>
-
-Image analogies provides a framework to learn complex, non-linear image filters with one training example. See the full writeup [here](/projects/computational-photography/final-project/)
-
-#### Video textures
-
-<p align="center">
-<img src="../../../images/video-textures/snow.gif"></img>
-</p>
-
-Video textures are "infinitely-repeating" images that capture the essence of a particular video. Read more [here](/projects/computational-photography/video-textures/)
-
-#### Gorgon
-
-<p align="center">
-<img src="../../../images/gorgon2.PNG"></img>
-</p>
-
-Gorgon is an interactive molecular modeling system, developed by WashU and Baylor, that I contributed to as part of an independent study for Professor Tao Ju. Gorgon's homepage can be viewed [here](http://gorgon.wustl.edu/).
-
-#### Image quilting
-
-<html><div style="text-align:center"><img src ="../../../images/texture-synthesis/before-after-quilt.PNG" /></div></html>
-
-Texture synthesis is the process of generating a larger texture image from a smaller source image. This project uses an approach developed by Efros and Freeman called Image Quilting. See the full writeup [here](/projects/computational-photography/texture-synthesis/).
-
-
-#### Image alignment
-
-<html><div style="text-align:center"><img src ="../../../images/gorskii-collection/tzar.jpg" /></div></html>
-
-This project automatically aligns, cleans up, and displays a single color photograph from a glass plate negative, sourced from the Prokudin-Gorskii image collection available at the Library of Congress. Full writeup [here](/projects/computational-photography/image-alignment/).
-
-#### Diamond-Square
-
-<html><div style="text-align:center"><img src ="../../../images/ds-example-small.png" /></div></html>
-
-The Diamond-Square algorithm is a common technique used to generate random heightmaps, used for procedural terrain generation. I blogged about it [here](/blog/2015/diamond-square/).
-
-### Emulators
-
-#### CHIP-8
-
-<html><div style="text-align:center"><img src ="../../../images/chip8.png" /></div></html>
-
-I developed a CHIP-8 emulator in Javascript; repository [here](https://github.com/jmecom/chip8/). 
-
-### Games
-
-#### Fae (Global Game Jam 2015)
-
-<div class="text-center" style="text-align:center"><img src="../images/fae1.png"></div>
-
-Fae is a short puzzle-platformer made in under 48 hours for Global Game Jam 2015. [Play it here](http://jmecom.github.io/global-game-jam-15/).
-
-#### Race the Rainbow (Global Game Jam 2014)
-
-<div class="text-center" style="text-align:center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/i0L-aT_03R4" frameborder="0" allowfullscreen></iframe>
+  <div class="col-md-6">
+    <a class="thumbnail" href="/projects/computational-photography/gradient-domain-fusion/">
+      <img src="../images/gradient-domain-fusion/sf-npr-big.png">
+    </a>  
+    <div class="project-description">
+      <a href="/projects/computational-photography/gradient-domain-fusion/">
+        <h4>Gradient-domain Fusion</h4>
+      </a>
+      <p>Gradient-domain Fusion uses Poisson blending to merge or artistically re-render images.</p>
+    </div>
+  </div>
 </div>
 
-I worked on the art for Race the Rainbow, a multiplayer racing game made in under 48 hours for Global Game Jam 2014. [Download and play it here](http://globalgamejam.org/2014/games/race-rainbow). [Repository here](https://github.com/kwanzek/GGJ2014).
+<div class="row projects">
+  <div class="col-md-6">
+    <a class="thumbnail" href="/projects/computational-photography/video-textures/">
+      <img src="../images/video-textures/city-4.gif">
+    </a>  
+    <div class="project-description">
+      <a href="/projects/computational-photography/video-textures/">
+        <h4>Video Textures</h4>
+      </a>
+      <p>Video textures are seamless, infinitely-repeating images that capture the essence of a video.</p>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <a class="thumbnail" href="https://github.com/jmecom/chip8/">
+      <img src="../images/chip8.png">
+    </a>  
+    <div class="project-description">
+      <a href="https://github.com/jmecom/chip8/">
+        <h4>CHIP-8.js</h4>
+      </a>
+      <p>A CHIP-8 emulator written in Javascript.</p>
+    </div>
+  </div> 
+</div>
+
+<div class="row projects">
+  <div class="col-md-6">
+    <a class="thumbnail" href="/projects/computational-photography/image-alignment/">
+      <img src="../images/gorskii-collection/big-town-cropped.jpg">
+    </a>  
+    <div class="project-description">
+      <a href="/projects/computational-photography/image-alignment/">
+        <h4>Image Alignment</h4>
+      </a>
+      <p>Creates an aligned color photograph from 3 glass plate negatives, sourced from the Prokudin-Gorskii image collection available at the Library of Congress.</p>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <a class="thumbnail" href="http://gorgon.wustl.edu">
+      <img src="../images/gorgon2.PNG">
+    </a>  
+    <div class="project-description">
+      <a href="http://gorgon.wustl.edu">
+        <h4>Gorgon</h4>
+      </a>
+      <p>Gorgon is an interactive molecular modeling system, developed by WashU and Baylor, that I contributed to as part of an independent study for Professor Tao Ju.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row projects">
+  <div class="col-md-6">
+    <a class="thumbnail" href="http://jmecom.github.io/global-game-jam-15/">
+      <img src="../images/fae1-crop.png">
+    </a>  
+    <div class="project-description">
+      <a href="http://jmecom.github.io/global-game-jam-15/">
+        <h4>Fae</h4>
+      </a>
+      <p>Fae is a puzzle-platformer made for the 2015 Global Game Jam.</p>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <a class="thumbnail" href="https://www.youtube.com/embed/i0L-aT_03R4">
+      <img src="../images/rtr-splash-crop.png">
+    </a>  
+    <div class="project-description">
+      <a href="https://www.youtube.com/embed/i0L-aT_03R4">
+        <h4>Race the Rainbow</h4>
+      </a>
+      <p>Race the Rainbow is a party racing game made for the 2014 Global Game Jam.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row projects">
+  <div class="col-md-6">
+    <a class="thumbnail" href="/blog/2015/diamond-square/">
+      <img src="../images/ds-example-small.png">
+    </a>  
+    <div class="project-description">
+      <a href="/blog/2015/diamond-square/">
+        <h4>Diamond-Square</h4>
+      </a>
+      <p>The Diamond-Square algorithm is a common technique used to generate random heightmaps, used for procedural terrain generation.</p>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <a class="thumbnail" href="/star-graph">
+      <img src="../images/stargraph.png">
+    </a>  
+    <div class="project-description">
+      <a href="/star-graph">
+        <h4>Star Graph</h4>
+      </a>
+      <p>A galaxy of game reviews. (Currently broken due to deprecated APIs.)</p>
+    </div>
+  </div>
+</div>
+
+<div class="row projects">
+  <div class="col-md-6">
+    <a class="thumbnail" href="/projects/computational-photography/texture-synthesis/">
+      <img src="../images/texture-synthesis/japanese-wallpaper-mincut-extended.png">
+    </a>
+    <div class="project-description">
+      <a href="/projects/computational-photography/texture-synthesis/">
+        <h4>Texture Synthesis</h4>
+      </a>
+      <p>Texture synthesis is the process of generating a larger texture image from a smaller source image. This project uses an approach developed by Efros and Freeman called Image Quilting.</p>
+    </div>
+  </div>  
+</div>

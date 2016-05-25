@@ -6,7 +6,7 @@ layout: page
 
 <div class="row">
 
-  <div class="col-md-8">
+  <div class="col-sm-8">
   
   <p class="lead">
     Hi, I'm Jordan Mecom. I'm a Software Engineer at Square, working on Caviar. 
@@ -19,7 +19,7 @@ layout: page
 
   </div>
 
-  <div class="col-md-4">
+  <div class="col-sm-4">
     <a href="images/me-big.jpg" class="thumbnail">
       <img src="images/me-big.jpg" style="margin: 0;">
     </a>
@@ -27,109 +27,112 @@ layout: page
 
 </div>
 
-
-
 <hr>
 
-## Highlights
+### Highlights
 
 Below is a gallery displaying some of my recent work.
 
 <div class="row">
-  <div class="col-xs-5 col-sm-3 col-md-3">
+  <div class="col-xs-12 col-sm-3 col-md-3">
     <a href="images/image-analogies/results/artout.jpg" class="thumbnail img-preview-thumb">
       <div class="img-preview" style="background:url(images/image-analogies/results/artout.jpg) center"></div>
     </a>
   </div>
 
-   <div class="col-xs-5 col-sm-3 col-md-3">
+   <div class="col-xs-12 col-sm-3 col-md-3">
     <a href="images/image-analogies/results/colorado.jpg" class="thumbnail img-preview-thumb">
       <div class="img-preview" style="background:url(images/image-analogies/results/colorado.jpg) center"></div>
     </a>
   </div>
 
-   <div class="col-xs-5 col-sm-3 col-md-3">
+   <div class="col-xs-12 col-sm-3 col-md-3">
     <a href="images/gradient-domain-fusion/sf-npr-big.png" class="thumbnail img-preview-thumb">
       <div class="img-preview" style="background:url(images/gradient-domain-fusion/scale-sf.png)"></div>
     </a>
   </div>
 
-   <div class="col-xs-5 col-sm-3 col-md-3">
+   <div class="col-xs-12 col-sm-3 col-md-3">
     <a href="images/gradient-domain-fusion/bb.png" class="thumbnail img-preview-thumb">
       <div class="img-preview" style="background:url(images/gradient-domain-fusion/scale-bb.png)"></div>
     </a>
   </div>
+</div>
 
-  <div class="col-xs-5 col-sm-3 col-md-3">
+<div class="row">
+  <div class="col-xs-12 col-sm-3 col-md-3">
     <a href="images/texture-synthesis/japanese-wallpaper-mincut.png" class="thumbnail img-preview-thumb">
       <div class="img-preview" style="background:url(images/texture-synthesis/japanese-wallpaper-mincut.png)"></div>
     </a>
   </div>
 
-  <div class="col-xs-5 col-sm-3 col-md-3">
+  <div class="col-xs-12 col-sm-3 col-md-3">
     <a href="images/texture-synthesis/starfield-mincut.png" class="thumbnail img-preview-thumb">
       <div class="img-preview" style="background:url(images/texture-synthesis/starfield-mincut.png)"></div>
     </a>
   </div>
 
-  <div class="col-xs-5 col-sm-3 col-md-3">
+  <div class="col-xs-12 col-sm-3 col-md-3">
     <a href="images/ds-example-small.png" class="thumbnail img-preview-thumb">
       <div class="img-preview" style="background:url(images/ds-example-small.png) center center"></div>
     </a>
   </div>
 
-  <div class="col-xs-5 col-sm-3 col-md-3">
+  <div class="col-xs-12 col-sm-3 col-md-3">
     <a href="images/chip8-maze.png" class="thumbnail img-preview-thumb">
       <div class="img-preview" style="background:url(images/chip8-maze-small.png)"></div>
     </a>
   </div>
+</div>
 
-  <div class="col-xs-5 col-sm-3 col-md-3">
+<div class="row">
+  <div class="col-xs-12 col-sm-3 col-md-3">
     <a href="images/gorgon2.PNG" class="thumbnail img-preview-thumb">
       <div class="img-preview" style="background:url(images/gorgon2.PNG) center center"></div>
     </a>
   </div>
 
-  <div class="col-xs-5 col-sm-3 col-md-3">
+  <div class="col-xs-12 col-sm-3 col-md-3">
     <a href="images/stargraph.png" class="thumbnail img-preview-thumb">
       <div class="img-preview" style="background:url(images/stargraph-small.png)"></div>
     </a>
   </div>
 
-  <div class="col-xs-5 col-sm-3 col-md-3">
+  <div class="col-xs-12 col-sm-3 col-md-3">
     <a href="images/video-textures/snow.gif" class="thumbnail img-preview-thumb">
       <div class="img-preview" style="background:url(images/video-textures/snow.gif) center center"></div>
     </a>
   </div>
 
-  <div class="col-xs-5 col-sm-3 col-md-3">
+  <div class="col-xs-12 col-sm-3 col-md-3">
     <a href="images/video-textures/city-4.gif" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/video-textures/city-4.gif) 75% 40%"></div>
+      <div class="img-preview" style="background:url(images/video-textures/city-4.gif) 712% 40%"></div>
     </a>
   </div>
+</div>
 
-  <div class="col-xs-5 col-sm-3 col-md-3">
+<div class="row">
+  <div class="col-xs-12 col-sm-3 col-md-3">
     <a href="images/gorskii-collection/big-church.jpg" class="thumbnail img-preview-thumb">
       <div class="img-preview" style="background:url(images/gorskii-collection/preview-big-church.jpg)"></div>
     </a>
   </div>
 
-  <div class="col-xs-5 col-sm-3 col-md-3">
+  <div class="col-xs-12 col-sm-3 col-md-3">
     <a href="images/gorskii-collection/house.jpg" class="thumbnail img-preview-thumb">
       <div class="img-preview" style="background:url(images/gorskii-collection/preview-house.jpg)"></div>
     </a>
   </div>
 
-  <div class="col-xs-5 col-sm-3 col-md-3">
+  <div class="col-xs-12 col-sm-3 col-md-3">
     <a href="images/fae1.png" class="thumbnail img-preview-thumb">
       <div class="img-preview" style="background:url(images/fae1.png) bottom left"></div>
     </a>
   </div>
 
-  <div class="col-xs-5 col-sm-3 col-md-3">
+  <div class="col-xs-12 col-sm-3 col-md-3">
     <a href="images/fae2.png" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/fae2.png) 25% 90%"></div>
+      <div class="img-preview" style="background:url(images/fae2.png) 212% 90%"></div>
     </a>
   </div>
-
 </div>
