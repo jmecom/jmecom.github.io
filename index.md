@@ -6,7 +6,7 @@ layout: page
 
 <div class="row">
 
-  <div class="col-sm-8">
+  <div class="col-sm-8 col-md-8">
   
   <p class="lead">
     Hi, I'm Jordan Mecom. I'm a Software Engineer at Square, working on Caviar. 
@@ -19,10 +19,10 @@ layout: page
 
   </div>
 
-  <div class="col-sm-4">
-    <a href="images/me-big.jpg" class="thumbnail">
-      <img src="images/me-big.jpg" style="margin: 0;">
-    </a>
+  <div class="col-sm-4 col-md-4">
+    <!-- <a href="images/me-big.jpg" class="thumbnail"> -->
+      <img class="thumbnail" src="images/me-big.jpg" style="margin: 0;">
+    <!-- </a> -->
   </div>
 
 </div>
