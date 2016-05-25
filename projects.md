@@ -99,7 +99,7 @@ Below are some projects I've worked on in my spare time.
   </div>
 
   <div class="col-md-6">
-    <a class="thumbnail" href="https://www.youtube.com/embed/i0L-aT_03R4">
+    <a class="thumbnail" href="https://www.youtube.com/watch?v=i0L-aT_03R4">
       <img src="../images/rtr-splash-crop.png">
     </a>  
     <div class="project-description">

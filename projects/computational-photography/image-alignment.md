@@ -4,6 +4,8 @@ title: "Image alignment with pyramids"
 date: 2016-02-04
 ---
 
+View the repository [here](https://github.com/jmecom/image-pyramid).
+
 ### Problem
 
 The Prokudin-Gorskii image collection from the Library of Congress is a series of glass plate negative photographs taken by Sergei Mikhailovich Prokudin-Gorskii. To view these photographs in color digitally, one must overlay the three images and display them in their respective RGB channels. However, due to the technology used to take these images, the three photos are not perfectly aligned. The goal of this project is to automatically align, clean up, and display a single color photograph from a glass plate negative.
