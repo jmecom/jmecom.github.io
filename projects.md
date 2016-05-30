@@ -5,7 +5,7 @@ permalink: /projects/
 
 # Projects
 
-Below are some projects I've worked on in my spare time. 
+Below are some projects I've created outside of work.
 
 <div class="row projects">
   <div class="col-md-6">
