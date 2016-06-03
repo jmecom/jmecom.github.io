@@ -157,7 +157,7 @@ A           |  A'
 ![]({{ jmecom.github.io }}/images/image-analogies/oil.A.bmp)  |  ![]({{ jmecom.github.io }}/images/image-analogies/oil.Ap.bmp) 
 B           |  B'         
 :-------------------------:|:-------------------------:
-![]({{ jmecom.github.io }}/images/image-analogies/colorado2.b.jpg)  |  ![]({{ jmecom.github.io }}/images/image-analogies/results/big_oily_colorado.b'.jpg) 
+![]({{ jmecom.github.io }}/images/image-analogies/colorado2.b.jpg)  |  ![]({{ jmecom.github.io }}/images/image-analogies/results/colorado.jpg) 
 
 We were quite pleased with this result, especially given our inability to parameter tune. The oil painting texture is reproduced very well. 
 
