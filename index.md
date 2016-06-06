@@ -9,7 +9,7 @@ layout: page
   <div class="col-sm-8 col-md-8">
   
   <p class="lead">
-    Hi, I'm Jordan Mecom. I'm a Software Engineer at Square, working on Caviar. 
+    Hi, I'm Jordan Mecom and I'm currently a Software Engineer at Square.
     I graduated from Washington University in St. Louis in May 2016. Computer vision and machine learning are at the center of my interests, but I also love computational photography and computer graphics. When I'm not writing code, I play the drums, watch eSports, play games, and make digital art. 
 
     <br><br>
