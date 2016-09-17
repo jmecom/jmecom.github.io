@@ -4,7 +4,7 @@ permalink: /resume/
 ---
 
 <h3> Resume </h3>
-I currently work at Square as a Software Engineer. For a complete resume, see my <a href="https://www.linkedin.com/in/jmecom">LinkedIn</a>.
+I currently work at Square as a Hardware Security Engineer. For a complete resume, see my <a href="https://www.linkedin.com/in/jmecom">LinkedIn</a>.
 
 <!-- <div class="text-center">
   <h2>Jordan Mecom</h2>
