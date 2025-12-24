@@ -1,9 +1,10 @@
-# If you have OpenSSL installed, we recommend updating
-# the following line to use "https"
-source 'http://rubygems.org'
+source "https://rubygems.org"
 
-group :development do
-  gem 'rake', '~> 10.4.2'
-  gem 'sass', '~> 3.4.10'
-  gem 'jekyll', '~> 2.5.3'
-end
+# Core site
+gem "jekyll", "~> 4.4"
+gem "jekyll-feed", "~> 0.16"
+gem "jekyll-paginate", "~> 1.1"
+gem "ffi", "~> 1.17"
+
+# Sass compiler
+gem "sassc", "~> 2.4"

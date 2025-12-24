@@ -1,12 +1,12 @@
 // Typography
-$base-font-family: "Open Sans", $helvetica;
+$base-font-family: "IBM Plex Mono", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
 $base-font-size: 1em;
 
 // Line height
-$base-line-height: 1.5;
+$base-line-height: 1.6;
 $heading-line-height: 1.2;
 
 // font weight
@@ -21,17 +21,17 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$primary-color: #ff900f;
-$white-color: #fff;
+$primary-color: #ffc840;
+$white-color: #f0f0f0;
 $black-color: #000;
 $blue-color: #477dca;
-$gray-color: #636363;
-$dark-gray-color: #232323;
-$medium-gray-color: #9a9a9a;
-$light-gray-color: #dedede;
+$gray-color: #666666;
+$dark-gray-color: #111111;
+$medium-gray-color: #aaaaaa;
+$light-gray-color: #2a2a2a;
 
 // Font Colors
-$base-font-color: lighten($dark-gray-color, 25%);
+$base-font-color: $white-color;
 $action-color: $primary-color;
 
 // Border
@@ -39,8 +39,8 @@ $base-border-color: $light-gray-color;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
-$base-background-color: lighten($white-color, 5%);
-$secondary-background-color: tint($base-border-color, 75%);
+$base-background-color: #111111;
+$secondary-background-color: #1a1a1a;
 
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
