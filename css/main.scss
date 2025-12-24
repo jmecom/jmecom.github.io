@@ -1,6 +1,155 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@charset "utf-8";
-@import "main";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+:root {
+  color: #e8e8e8;
+  background-color: #0a0a0a;
+  --ink: #e8e8e8;
+  --muted: #9da3aa;
+  --surface: #0a0a0a;
+  --panel: #111214;
+  --edge: #1d1f22;
+  --accent: #4aa3ff;
+  --accent-warm: #f5c96a;
+  --rule: 1px solid rgba(255, 255, 255, 0.08);
+  --glow: 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+  color: var(--ink);
+  background-color: var(--surface);
+  background-image: radial-gradient(circle at 50% -20%, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02) 35%, transparent 70%);
+  line-height: 1.7;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 120ms ease;
+}
+
+a:hover,
+ a:focus {
+  color: var(--accent-warm);
+  text-decoration: none;
+}
+
+.site-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 2.5rem;
+}
+
+.site-header,
+.site-footer {
+  width: 100%;
+}
+
+.site-header__inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.25rem 0 0.75rem;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: var(--rule);
+  background-color: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(8px);
+}
+
+.site-brand {
+  font-size: 0.9rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.site-main {
+  flex: 1;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 0 2.5rem;
+}
+
+.page {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+  margin: 0 0 0.75rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: #f1f1f1;
+}
+
+h2 {
+  font-size: 0.9rem;
+  text-transform: lowercase;
+  letter-spacing: 0.12rem;
+  color: var(--muted);
+  margin-top: 2rem;
+}
+
+p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+}
+
+hr {
+  border: none;
+  border-top: var(--rule);
+  margin: 2rem 0;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.links--primary a {
+  font-weight: 600;
+  color: #f1f1f1;
+}
+
+.links--primary a:hover,
+.links--primary a:focus {
+  color: var(--accent-warm);
+}
+
+.small {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
+
+  .site-header__inner,
+  .site-main {
+    max-width: 100%;
+  }
+}

@@ -1,138 +1,35 @@
 ---
-layout: page
+layout: default
+title: Home
 ---
 
-# Welcome!
+# Jordan Mecom
 
-<div class="row">
+I'm a staff security engineer, with an emphasis on low-level systems software, cryptography, and hardware. I currently work at Block on the bitcoin security team. Recently, I built the firmware for Bitkey, helped secure Waymo cars, and worked on security for payments terminals.
 
-  <div class="col-sm-8 col-md-8">
-  
-  <p class="lead">
-    Hi, I'm Jordan Mecom and I'm currently a Hardware Security Engineer at Square.
-    I graduated from Washington University in St. Louis in May 2016.
+Some of my recent interests are in confidential computing, programming languages with capability-based security, and embedded security.
 
-    <br><br>
+## Social
 
-    If you're curious about what I've been up to lately, check out my <a href="/projects">projects</a>. To take a look at my past work, head over to my <a href="/resume">resume</a>. Feel free to email me at jmecom AT wustl DOT edu if you want to reach out about anything. 
-  </p>
+<ul class="links links--primary">
+  <li><a href="https://github.com/jmecom/" target="_blank" rel="noreferrer">GitHub</a></li>
+  <li><a href="https://www.linkedin.com/in/jmecom/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+  <li><a href="https://x.com/jordanmecom" target="_blank" rel="noreferrer">Twitter</a></li>
+</ul>
 
-  </div>
+## Selected works
 
-  <div class="col-sm-4 col-md-4">
-    <!-- <a href="images/me-big.jpg" class="thumbnail"> -->
-      <img class="thumbnail" src="images/me-big.jpg" style="margin: 0;">
-    <!-- </a> -->
-  </div>
+<ul class="links">
+  <li><a href="https://www.youtube.com/watch?v=QQ6ZnGk_xDU" target="_blank" rel="noreferrer">Talk: Self-custody without hardware</a></li>
+  <li><a href="https://assets.ctfassets.net/mtmp6hzjjvnd/6Qjcs8zgMiyffC0Uk8cx4V/380f331f5b4156622c8f5a376c352c96/Self-Custody_without_Hardware_-10-30-24-.pdf?ref=bitkey.build" target="_blank" rel="noreferrer">Paper: Self-custody without hardware (PDF)</a></li>
+</ul>
 
-</div>
+## Words
 
-<hr>
+<ul class="links">
+  <li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
+</ul>
 
-### Highlights
+## Contact
 
-Below is a gallery displaying some of my recent work.
-
-<div class="row">
-  <div class="col-xs-12 col-sm-3 col-md-3">
-    <a href="images/image-analogies/results/artout.jpg" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/image-analogies/results/artout.jpg) center"></div>
-    </a>
-  </div>
-
-   <div class="col-xs-12 col-sm-3 col-md-3">
-    <a href="images/image-analogies/results/colorado.jpg" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/image-analogies/results/colorado.jpg) center"></div>
-    </a>
-  </div>
-
-   <div class="col-xs-12 col-sm-3 col-md-3">
-    <a href="images/gradient-domain-fusion/sf-npr-big.png" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/gradient-domain-fusion/scale-sf.png)"></div>
-    </a>
-  </div>
-
-   <div class="col-xs-12 col-sm-3 col-md-3">
-    <a href="images/gradient-domain-fusion/bb.png" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/gradient-domain-fusion/scale-bb.png)"></div>
-    </a>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-12 col-sm-3 col-md-3">
-    <a href="images/texture-synthesis/japanese-wallpaper-mincut.png" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/texture-synthesis/japanese-wallpaper-mincut.png)"></div>
-    </a>
-  </div>
-
-  <div class="col-xs-12 col-sm-3 col-md-3">
-    <a href="images/texture-synthesis/starfield-mincut.png" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/texture-synthesis/starfield-mincut.png)"></div>
-    </a>
-  </div>
-
-  <div class="col-xs-12 col-sm-3 col-md-3">
-    <a href="images/ds-example-small.png" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/ds-example-small.png) center center"></div>
-    </a>
-  </div>
-
-  <div class="col-xs-12 col-sm-3 col-md-3">
-    <a href="images/chip8-maze.png" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/chip8-maze-small.png)"></div>
-    </a>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-12 col-sm-3 col-md-3">
-    <a href="images/gorgon2.PNG" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/gorgon2.PNG) center center"></div>
-    </a>
-  </div>
-
-  <div class="col-xs-12 col-sm-3 col-md-3">
-    <a href="images/stargraph.png" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/stargraph-small.png)"></div>
-    </a>
-  </div>
-
-  <div class="col-xs-12 col-sm-3 col-md-3">
-    <a href="images/video-textures/snow.gif" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/video-textures/snow.gif) center center"></div>
-    </a>
-  </div>
-
-  <div class="col-xs-12 col-sm-3 col-md-3">
-    <a href="images/video-textures/city-4.gif" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/video-textures/city-4.gif) 712% 40%"></div>
-    </a>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-12 col-sm-3 col-md-3">
-    <a href="images/gorskii-collection/big-church.jpg" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/gorskii-collection/preview-big-church.jpg)"></div>
-    </a>
-  </div>
-
-  <div class="col-xs-12 col-sm-3 col-md-3">
-    <a href="images/gorskii-collection/house.jpg" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/gorskii-collection/preview-house.jpg)"></div>
-    </a>
-  </div>
-
-  <div class="col-xs-12 col-sm-3 col-md-3">
-    <a href="images/fae1.png" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/fae1.png) bottom left"></div>
-    </a>
-  </div>
-
-  <div class="col-xs-12 col-sm-3 col-md-3">
-    <a href="images/fae2.png" class="thumbnail img-preview-thumb">
-      <div class="img-preview" style="background:url(images/fae2.png) 212% 90%"></div>
-    </a>
-  </div>
-</div>
+<p class="small">email: <a href="mailto:mecomjordan@gmail.com">mecomjordan@gmail.com</a></p>
