@@ -61,9 +61,3 @@ Some of my recent interests are in confidential computing, programming languages
     <span class="work-note">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</span>
   </li>
 </ul>
-
-## Words
-
-<ul class="links">
-  <li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
-</ul>
