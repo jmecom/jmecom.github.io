@@ -1,20 +1,20 @@
 ---
 ---
 
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap");
 
 :root {
-  color: #e8e8e8;
-  background-color: #0a0a0a;
-  --ink: #e8e8e8;
-  --muted: #9da3aa;
-  --surface: #0a0a0a;
-  --panel: #111214;
-  --edge: #1d1f22;
-  --accent: #f5c96a;
-  --accent-hover: #ffffff;
-  --rule: 1px solid rgba(255, 255, 255, 0.08);
-  --glow: 0 0 0 1px rgba(255, 255, 255, 0.03);
+  color: #f0f0f0;
+  background-color: #000000;
+  --ink: #f0f0f0;
+  --muted: #b3b3b3;
+  --surface: #000000;
+  --panel: #111111;
+  --edge: #222222;
+  --accent: #ffc840;
+  --accent-hover: #fff1c2;
+  --rule: 1px solid rgba(240, 246, 246, 0.08);
+  --glow: 0 0 0 1px rgba(240, 246, 246, 0.03);
 }
 
 * {
@@ -23,12 +23,11 @@
 
 body {
   margin: 0;
-  font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
   color: var(--ink);
   background-color: var(--surface);
-  background-image: radial-gradient(circle at 50% -20%, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02) 35%, transparent 70%);
-  line-height: 1.7;
-  font-size: 15px;
+  line-height: 1.6;
+  font-size: 16px;
   text-rendering: optimizeLegibility;
 }
 
@@ -38,8 +37,8 @@ a {
   transition: color 120ms ease;
 }
 
- a:hover,
- a:focus {
+a:hover,
+a:focus {
   color: var(--accent-hover);
   text-decoration: none;
 }
@@ -48,7 +47,7 @@ a {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 0 2rem 2.5rem;
+  padding: 0;
 }
 
 .site-header,
@@ -81,23 +80,30 @@ a {
 .site-main {
   flex: 1;
   width: 100%;
-  max-width: 720px;
-  margin: 0 auto 0 2rem;
-  padding: 1.5rem 0 2.5rem;
+  max-width: 75ch;
+  margin: 0;
+  padding: 2rem 3rem 4rem;
+}
+
+.main-content {
+  max-width: 65ch;
+  margin: 0;
 }
 
 .social-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
-  margin: 0.6rem 0 1.2rem;
-  font-size: 0.78rem;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.85rem;
   color: var(--muted);
   align-items: center;
+  letter-spacing: 0.08em;
+  text-transform: none;
 }
 
 .divider {
-  opacity: 0.45;
+  color: #3c4f70;
 }
 
 .social-row .icon {
@@ -110,6 +116,12 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  text-decoration: none;
+}
+
+.social-row a:hover,
+.social-row a:focus {
+  text-decoration: underline;
 }
 
 .social-row .icon {
@@ -137,26 +149,28 @@ a {
 
 h1,
 h2 {
-  font-weight: 500;
+  font-weight: 600;
   margin: 0 0 0.75rem;
+  text-transform: none;
 }
 
 h1 {
-  font-size: 1.6rem;
-  color: #f1f1f1;
+  font-size: 2.2rem;
+  color: var(--ink);
+  margin: 0 0 0.75rem;
 }
 
 h2 {
-  font-size: 0.9rem;
-  text-transform: lowercase;
-  letter-spacing: 0.12rem;
-  color: var(--muted);
-  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 p {
-  margin: 0 0 1rem;
-  color: var(--muted);
+  margin: 0 0 1.25rem;
+  color: var(--ink);
 }
 
 hr {
@@ -165,36 +179,36 @@ hr {
   margin: 2rem 0;
 }
 
-.links {
+.work-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 1rem;
-  display: grid;
-  gap: 0.4rem;
+  margin: 0;
 }
 
-.links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
+.work-item {
+  margin-bottom: 1rem;
 }
 
-.links--primary a {
-  font-weight: 600;
-  color: #f1f1f1;
+.work-type {
+  font-weight: 700;
+  color: var(--accent);
 }
 
-.links--primary a:hover,
-.links--primary a:focus {
-  color: var(--accent-hover);
+.work-title {
+  font-weight: 400;
+  color: inherit;
+}
+
+.work-title:hover,
+.work-title:focus {
+  color: var(--accent);
 }
 
 .work-note {
   display: block;
-  font-size: 0.8rem;
-  font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
-  color: rgba(255, 255, 255, 0.65);
-  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  color: #888888;
+  margin-top: 0.15rem;
 }
 
 .small {
@@ -204,11 +218,15 @@ hr {
 
 @media (max-width: 640px) {
   body {
-    font-size: 14px;
+    font-size: 15px;
   }
 
-  .site-header__inner,
   .site-main {
+    max-width: 100%;
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .main-content {
     max-width: 100%;
   }
 }

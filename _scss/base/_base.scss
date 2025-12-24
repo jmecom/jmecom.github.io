@@ -10,3 +10,9 @@
 @import "typography";
 @import "helpers";
 @import "blockquotes";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

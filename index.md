@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
+<div class="main-content" markdown="1">
+
 # Jordan Mecom
 
 <div class="social-row">
@@ -23,41 +25,52 @@ Some of my recent interests are in confidential computing, programming languages
 
 ## Selected works
 
-<ul class="links">
-  <li>
-    <a href="https://www.youtube.com/watch?v=QQ6ZnGk_xDU" target="_blank" rel="noreferrer">Talk: Self-custody without hardware</a>
-    <span class="work-note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+<ul class="work-list">
+  <li class="work-item">
+    <span class="work-type">Talk:</span>
+    <a class="work-title" href="https://www.youtube.com/watch?v=QQ6ZnGk_xDU" target="_blank" rel="noreferrer">Self-custody without hardware</a>
+    <p class="work-note">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </li>
-  <li>
-    <a href="https://assets.ctfassets.net/mtmp6hzjjvnd/6Qjcs8zgMiyffC0Uk8cx4V/380f331f5b4156622c8f5a376c352c96/Self-Custody_without_Hardware_-10-30-24-.pdf?ref=bitkey.build" target="_blank" rel="noreferrer">Paper: Self-custody without hardware (PDF)</a>
-    <span class="work-note">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+  <li class="work-item">
+    <span class="work-type">Paper:</span>
+    <a class="work-title" href="https://assets.ctfassets.net/mtmp6hzjjvnd/6Qjcs8zgMiyffC0Uk8cx4V/380f331f5b4156622c8f5a376c352c96/Self-Custody_without_Hardware_-10-30-24-.pdf?ref=bitkey.build" target="_blank" rel="noreferrer">Self-custody without hardware (PDF)</a>
+    <p class="work-note">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   </li>
-  <li>
-    <a href="https://www.youtube.com/watch?v=dummy" target="_blank" rel="noreferrer">Talk: Embedded crypto for the restless</a>
-    <span class="work-note">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</span>
+  <li class="work-item">
+    <span class="work-type">Talk:</span>
+    <a class="work-title" href="https://www.youtube.com/watch?v=dummy" target="_blank" rel="noreferrer">Embedded crypto for the restless</a>
+    <p class="work-note">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
   </li>
-  <li>
-    <a href="https://example.com/project" target="_blank" rel="noreferrer">Project: Capability-focused sandbox</a>
-    <span class="work-note">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</span>
+  <li class="work-item">
+    <span class="work-type">Project:</span>
+    <a class="work-title" href="https://example.com/project" target="_blank" rel="noreferrer">Capability-focused sandbox</a>
+    <p class="work-note">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
   </li>
-  <li>
-    <a href="https://example.com/tool" target="_blank" rel="noreferrer">Tool: Minimal trusted bootloader</a>
-    <span class="work-note">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</span>
+  <li class="work-item">
+    <span class="work-type">Tool:</span>
+    <a class="work-title" href="https://example.com/tool" target="_blank" rel="noreferrer">Minimal trusted bootloader</a>
+    <p class="work-note">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
   </li>
-  <li>
-    <a href="https://example.com/research" target="_blank" rel="noreferrer">Research: Capability-aware schedulers</a>
-    <span class="work-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</span>
+  <li class="work-item">
+    <span class="work-type">Research:</span>
+    <a class="work-title" href="https://example.com/research" target="_blank" rel="noreferrer">Capability-aware schedulers</a>
+    <p class="work-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
   </li>
-  <li>
-    <a href="https://example.com/report" target="_blank" rel="noreferrer">Report: Firmware threat modeling</a>
-    <span class="work-note">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</span>
+  <li class="work-item">
+    <span class="work-type">Report:</span>
+    <a class="work-title" href="https://example.com/report" target="_blank" rel="noreferrer">Firmware threat modeling</a>
+    <p class="work-note">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
   </li>
-  <li>
-    <a href="https://example.com/hardware" target="_blank" rel="noreferrer">Hardware: Secure element audit</a>
-    <span class="work-note">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</span>
+  <li class="work-item">
+    <span class="work-type">Hardware:</span>
+    <a class="work-title" href="https://example.com/hardware" target="_blank" rel="noreferrer">Secure element audit</a>
+    <p class="work-note">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
   </li>
-  <li>
-    <a href="https://example.com/case-study" target="_blank" rel="noreferrer">Case study: Payment terminal resilience</a>
-    <span class="work-note">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</span>
+  <li class="work-item">
+    <span class="work-type">Case study:</span>
+    <a class="work-title" href="https://example.com/case-study" target="_blank" rel="noreferrer">Payment terminal resilience</a>
+    <p class="work-note">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
   </li>
 </ul>
+
+</div>

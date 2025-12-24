@@ -1,7 +1,7 @@
 /*=====================================
 =            Layout styles            =
 =====================================*/
-@import url("//fonts.googleapis.com/css?family=Open+Sans:400,300,700");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap");
 
 html,
 body {
@@ -10,8 +10,74 @@ body {
 }
 
 body {
-  border-top: 5px solid $primary-color;
-  background: $base-background-color url("../images/bg-pattern.png");
+  background: $base-background-color;
+}
+
+.site-shell {
+  min-height: 100vh;
+}
+
+.main-content {
+  margin: 0 auto;
+  max-width: 65ch;
+  padding: 4rem 1.5rem 6rem;
+}
+
+.social-row {
+  margin: 1rem 0 2.5rem;
+  font-size: rem(14);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.social-row a {
+  text-decoration: none;
+}
+
+.social-row a:hover,
+.social-row a:focus {
+  text-decoration: underline;
+}
+
+.divider {
+  color: #666666;
+  margin: 0 0.5rem;
+}
+
+.main-content h2 {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.work-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.work-item {
+  margin-bottom: 2rem;
+}
+
+.work-type {
+  color: $action-color;
+  font-weight: $font-weight-bold;
+}
+
+.work-title {
+  color: $base-font-color;
+  font-weight: $font-weight-normal;
+}
+
+.work-title:hover,
+.work-title:focus {
+  color: $action-color;
+}
+
+.work-note {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  color: #aaaaaa;
 }
 
 // Home page
