@@ -94,8 +94,8 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
-  margin: 1rem 0 1.5rem;
-  font-size: 0.85rem;
+  margin: 1rem 0 3rem;
+  font-size: 0.9rem;
   color: var(--muted);
   align-items: center;
   letter-spacing: 0.08em;
@@ -149,28 +149,29 @@ a:focus {
 
 h1,
 h2 {
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 0 0.75rem;
   text-transform: none;
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: var(--ink);
   margin: 0 0 0.75rem;
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--ink);
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   margin-bottom: 1rem;
 }
 
 p {
   margin: 0 0 1.25rem;
   color: var(--ink);
+  font-size: 1rem;
 }
 
 hr {
