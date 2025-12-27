@@ -6,14 +6,13 @@ title: Home
 <main class="main-content">
 
 <h1 class="terminal-header"><span class="ghost-icon"></span>Jordan Mecom</h1>
-<p class="terminal-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
 <p class="section-content">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+I'm a Staff Security Engineer currently working at Block on bitcoin security. Previously, I wrote the firmware for Bitkey, secured self-driving cars at Waymo, and worked on hardware security for Square's payment terminals.
 </p>
 
 <p class="section-content">
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+My work focuses on low-level systems, cryptography, and hardware.
 </p>
 
 <div class="social-row">
@@ -24,49 +23,48 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 <a href="https://x.com/jordanmecom">X</a>
 <span class="divider">/</span>
 <a href="https://jmecom.notion.site/jmecom-info-2580ab275b3141489778abc5954a6394">Notion</a>
+<span class="divider">/</span>
+<a href="mailto:mecomjordan@gmail.com">Email</a>
 </div>
 
 <h2>Software</h2>
 
 <ul class="project-list">
   <li class="project-item">
-    <div class="project-name"><a href="#">lorem-ipsum</a></div>
-    <div class="project-desc">A tool for generating placeholder content with customizable options</div>
+    <div class="project-name"><a href="https://github.com/proto-at-block/bitkey/tree/main/firmware">Bitkey Firmware</a></div>
+    <div class="project-desc">Embedded software for Block's self-custody, multisig, hardware wallet.</div>
   </li>
   <li class="project-item">
-    <div class="project-name"><a href="#">dolor-sit</a></div>
-    <div class="project-desc">Simple, modern CLI for managing development environments</div>
+    <div class="project-name"><a href="https://github.com/block/picocert">Picocert</a></div>
+    <div class="project-desc">A header-only library for tiny certs, for resource constrained devices.</div>
   </li>
   <li class="project-item">
-    <div class="project-name"><a href="#">amet-consectetur</a></div>
-    <div class="project-desc">Lightweight TypeScript library for data transformation</div>
+    <div class="project-name"><a href="https://github.com/jmecom/capable">Capable</a></div>
+    <div class="project-desc">An experimental capability-secure systems language.</div>
   </li>
   <li class="project-item">
-    <div class="project-name"><a href="#">adipiscing-elit</a></div>
-    <div class="project-desc">Fast and secure file synchronization across devices</div>
+    <div class="project-name"><a href="https://github.com/jmecom/hnk">hnk</a></div>
+    <div class="project-desc">A semantic git diff viewer that groups related changes.</div>
   </li>
   <li class="project-item">
-    <div class="project-name"><a href="#">tempor-incididunt</a></div>
-    <div class="project-desc">Developer tools for debugging distributed systems</div>
+    <div class="project-name"><a href="https://github.com/jmecom/lcars">LCARS</a></div>
+    <div class="project-desc">A GitHub dashboard TUI.</div>
   </li>
 </ul>
 
-<h2>Writing</h2>
+<h2>Talks</h2>
 
-<p class="section-content">
-Lorem ipsum dolor sit amet at <a href="#">words.example.com</a>.
-</p>
-
-<p class="section-content">
-<a href="#">Dispatches</a> is my lightly edited technical newsletter.
-</p>
+<ul class="project-list">
+  <li class="project-item">
+    <div class="project-name"><a href="https://www.youtube.com/watch?v=QQ6ZnGk_xDU">BSidesSF 2025: Confidential Computing</a></div>
+    <div class="project-desc">An overview on confidential computing technology. <a href="https://docs.google.com/presentation/d/1eqAoFe1IeI4VS0Kc0TexD59hJqnpZr2SYB3NkDgfMow/edit?slide=id.g13b47bac47e_0_5#slide=id.g13b47bac47e_0_5">Slides</a></div>
+  </li>
+</ul>
 
 <h2>Contact</h2>
 
-<div class="contact-item"><a href="mailto:hello@example.com">hello@example.com</a></div>
-
-<p class="section-content" style="margin-top: 1rem;">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+<p class="section-content">
+You can reach me at my <a href="mailto:mecomjordan@gmail.com">email</a> or <a href="https://linkedin.com/in/jmecom">LinkedIn</a>.
 </p>
 
 <h2>Other</h2>
