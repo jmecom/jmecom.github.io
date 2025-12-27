@@ -67,23 +67,10 @@ My work focuses on low-level systems, cryptography, and hardware.
 You can reach me at my <a href="mailto:mecomjordan@gmail.com">email</a> or <a href="https://linkedin.com/in/jmecom">LinkedIn</a>.
 </p>
 
-<h2>Other</h2>
-
-<ul class="links-list">
-  <li><a href="#">/lorem</a></li>
-  <li><a href="#">/ipsum</a></li>
-  <li><a href="#">/dolor</a></li>
-  <li><a href="#">/sit-amet</a></li>
-</ul>
-
 <div class="status-line">
   <span class="status-item">
     <span class="status-label">last updated:</span>
-    <span class="status-value">2024-12</span>
-  </span>
-  <span class="status-item">
-    <span class="status-label">location:</span>
-    <span class="status-value">lorem ipsum</span>
+    <span class="status-value">2025-12</span>
   </span>
 </div>
 
