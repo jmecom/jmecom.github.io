@@ -78,4 +78,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
   <li><a href="#">/sit-amet</a></li>
 </ul>
 
+<div class="status-line">
+  <span class="status-item">
+    <span class="status-label">last updated:</span>
+    <span class="status-value">2024-12</span>
+  </span>
+  <span class="status-item">
+    <span class="status-label">location:</span>
+    <span class="status-value">lorem ipsum</span>
+  </span>
+</div>
+
 </main>

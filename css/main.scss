@@ -217,6 +217,107 @@ hr {
   font-size: 0.9rem;
 }
 
+/* Prompt prefix on section headers */
+h2::before {
+  content: "> ";
+  color: var(--muted);
+}
+
+/* Sliding underline hover for links */
+.social-row a,
+.project-name a,
+.links-list a {
+  position: relative;
+}
+
+.social-row a::after,
+.project-name a::after,
+.links-list a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--accent);
+  transition: width 0.2s ease;
+}
+
+.social-row a:hover::after,
+.project-name a:hover::after,
+.links-list a:hover::after {
+  width: 100%;
+}
+
+.social-row a:hover,
+.social-row a:focus {
+  text-decoration: none;
+}
+
+/* Project list */
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-item {
+  margin-bottom: 1.25rem;
+}
+
+.project-name {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.project-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+/* Links list */
+.links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links-list li {
+  margin-bottom: 0.4rem;
+}
+
+.links-list a {
+  text-decoration: none;
+}
+
+/* Status line */
+.status-line {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: var(--rule);
+  font-size: 0.85rem;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.status-label {
+  color: var(--muted);
+}
+
+.status-value {
+  color: var(--ink);
+  opacity: 0.6;
+}
+
 @media (max-width: 640px) {
   body {
     font-size: 15px;
