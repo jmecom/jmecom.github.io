@@ -58,9 +58,8 @@
             dot.x = dot.originX - Math.cos(angle) * force;
             dot.y = dot.originY - Math.sin(angle) * force;
 
-            const colorIndex = Math.floor((angle + Math.PI) / (Math.PI * 2) * 3) % 3;
-            color = COLORS[colorIndex];
-            alpha = 0.2 + t * 0.4;
+            color = COLORS[0]; // coral for entire hover area
+            alpha = 0.2 + t * 0.5;
           } else {
             dot.x += (dot.originX - dot.x) * 0.1;
             dot.y += (dot.originY - dot.y) * 0.1;
