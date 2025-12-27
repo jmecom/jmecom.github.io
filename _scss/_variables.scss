@@ -6,8 +6,8 @@ $heading-font-family: $base-font-family;
 $base-font-size: 1em;
 
 // Line height
-$base-line-height: 1.6;
-$heading-line-height: 1.2;
+$base-line-height: 1.7;
+$heading-line-height: 1.3;
 
 // font weight
 $font-weight-light: 300;
@@ -20,15 +20,16 @@ $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
-// Colors
-$primary-color: #ffc840;
-$white-color: #f0f0f0;
+// Colors - Terminal Shop Style
+$primary-color: #6cc7c7;       // Cyan/teal for headers
+$accent-color: #8b7ec7;        // Purple accent
+$white-color: #e0e0e0;         // Light text
 $black-color: #000;
-$blue-color: #477dca;
-$gray-color: #666666;
-$dark-gray-color: #111111;
-$medium-gray-color: #aaaaaa;
-$light-gray-color: #2a2a2a;
+$blue-color: #6cc7c7;
+$gray-color: #888899;          // Muted descriptions
+$dark-gray-color: #1a1a2e;
+$medium-gray-color: #9999aa;
+$light-gray-color: #3d3d5c;
 
 // Font Colors
 $base-font-color: $white-color;
@@ -39,8 +40,8 @@ $base-border-color: $light-gray-color;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
-$base-background-color: #111111;
-$secondary-background-color: #1a1a1a;
+$base-background-color: #2d2641;   // Dark purple from terminal-shop
+$secondary-background-color: #252139;
 
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
