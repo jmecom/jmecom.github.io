@@ -4,17 +4,17 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap");
 
 :root {
-  color: #00303b;
-  background-color: #f1f2da;
-  --ink: #00303b;
-  --muted: #4a6060;
-  --surface: #f1f2da;
-  --panel: #e8e9d0;
-  --edge: #d0d1b8;
-  --accent: #ff7777;
-  --accent-hover: #e05555;
-  --rule: 1px solid rgba(0, 48, 59, 0.1);
-  --glow: 0 0 0 1px rgba(0, 48, 59, 0.05);
+  color: #f0f6f0;
+  background-color: #222323;
+  --ink: #f0f6f0;
+  --muted: #999c9c;
+  --surface: #222323;
+  --panel: #2c2d2d;
+  --edge: #3a3b3b;
+  --accent: #f0f6f0;
+  --accent-hover: #ffffff;
+  --rule: 1px solid rgba(240, 246, 240, 0.1);
+  --glow: 0 0 0 1px rgba(240, 246, 240, 0.05);
 }
 
 * {
