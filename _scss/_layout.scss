@@ -96,11 +96,22 @@ body {
 .social-row a {
   text-decoration: none;
   color: $primary-color;
-}
+  position: relative;
 
-.social-row a:hover,
-.social-row a:focus {
-  text-decoration: underline;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: $primary-color;
+    transition: width 0.2s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 .divider {
@@ -108,14 +119,20 @@ body {
   margin: 0 0.5rem;
 }
 
+// Section headers with prompt prefix
 .main-content h2 {
   margin-top: 3rem;
   margin-bottom: 1rem;
   color: $primary-color;
   font-size: 1rem;
+
+  &::before {
+    content: "> ";
+    color: $gray-color;
+  }
 }
 
-// Project/software list
+// Project/software list with checkboxes
 .project-list {
   list-style: none;
   padding-left: 0;
@@ -123,7 +140,24 @@ body {
 }
 
 .project-item {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.checkbox {
+  color: $gray-color;
+  flex-shrink: 0;
+  user-select: none;
+
+  &.checked {
+    color: $primary-color;
+  }
+}
+
+.project-content {
+  flex: 1;
 }
 
 .project-name {
@@ -131,13 +165,26 @@ body {
   font-weight: $font-weight-bold;
 }
 
+// Sliding underline hover effect
 .project-name a {
   color: inherit;
   text-decoration: none;
-}
+  position: relative;
 
-.project-name a:hover {
-  text-decoration: underline;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: $primary-color;
+    transition: width 0.2s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 .project-desc {
@@ -168,16 +215,55 @@ body {
 }
 
 .links-list li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .links-list a {
   color: $primary-color;
   text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: $primary-color;
+    transition: width 0.2s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
-.links-list a:hover {
-  text-decoration: underline;
+// Status line (terminal footer)
+.status-line {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $light-gray-color;
+  font-size: 0.85rem;
+  color: $gray-color;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.status-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-label {
+  color: $gray-color;
+}
+
+.status-value {
+  color: $medium-gray-color;
 }
 
 // Legacy support
