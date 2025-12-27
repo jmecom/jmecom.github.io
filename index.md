@@ -21,9 +21,9 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 <span class="divider">/</span>
 <a href="https://linkedin.com/in/jmecom">LinkedIn</a>
 <span class="divider">/</span>
-<a href="https://twitter.com/jmecom">Twitter</a>
+<a href="https://x.com/jordanmecom">X</a>
 <span class="divider">/</span>
-<a href="https://mastodon.social/@jmecom">Mastodon</a>
+<a href="https://jmecom.notion.site/jmecom-info-2580ab275b3141489778abc5954a6394">Notion</a>
 </div>
 
 <h2>Software</h2>
