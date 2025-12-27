@@ -11,8 +11,8 @@
   --surface: #222323;
   --panel: #2c2d2d;
   --edge: #3a3b3b;
-  --accent: #f0f6f0;
-  --accent-hover: #ffffff;
+  --accent: #ff7777;
+  --accent-hover: #ff9999;
   --rule: 1px solid rgba(240, 246, 240, 0.1);
   --glow: 0 0 0 1px rgba(240, 246, 240, 0.05);
 }
@@ -133,7 +133,7 @@ a:focus {
 
 .social-row a:hover,
 .social-row a:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .social-row .icon {
@@ -250,36 +250,6 @@ h2::before {
   color: var(--muted);
 }
 
-/* Sliding underline hover for links */
-.social-row a,
-.project-name a,
-.links-list a {
-  position: relative;
-}
-
-.social-row a::after,
-.project-name a::after,
-.links-list a::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: var(--accent);
-  transition: width 0.2s ease;
-}
-
-.social-row a:hover::after,
-.project-name a:hover::after,
-.links-list a:hover::after {
-  width: 100%;
-}
-
-.social-row a:hover,
-.social-row a:focus {
-  text-decoration: none;
-}
 
 /* Project list */
 .project-list {
@@ -300,6 +270,10 @@ h2::before {
 .project-name a {
   color: inherit;
   text-decoration: none;
+}
+
+.project-name a:hover {
+  color: var(--accent-hover);
 }
 
 .project-desc {
