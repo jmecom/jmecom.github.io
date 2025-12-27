@@ -61,6 +61,12 @@ My work focuses on low-level systems, cryptography, and hardware.
   </li>
 </ul>
 
+<h2>Writing</h2>
+
+<p class="section-content">
+My <a href="https://jmecom.notion.site/jmecom-info-2580ab275b3141489778abc5954a6394">Notion</a> has a short blog section with recipes and CTF writeups.
+</p>
+
 <h2>Contact</h2>
 
 <p class="section-content">
