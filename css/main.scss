@@ -229,6 +229,19 @@ hr {
   font-size: 0.9rem;
 }
 
+.ghost-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1.5rem;
+  background-color: #f1f2da;
+  -webkit-mask-image: url(/ghost.png);
+  mask-image: url(/ghost.png);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
 /* Prompt prefix on section headers */
 h2::before {
   content: "> ";
