@@ -5,9 +5,7 @@ title: Home
 
 <main class="main-content">
 
-<div class="ghost-icon"></div>
-
-<h1 class="terminal-header">Jordan Mecom</h1>
+<h1 class="terminal-header"><span class="ghost-icon"></span>Jordan Mecom</h1>
 <p class="terminal-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
 <p class="section-content">

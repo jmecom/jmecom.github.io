@@ -4,17 +4,17 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap");
 
 :root {
-  color: #f1f2da;
-  background-color: #00303b;
-  --ink: #f1f2da;
-  --muted: #ffce96;
-  --surface: #00303b;
-  --panel: #004050;
-  --edge: #005060;
+  color: #00303b;
+  background-color: #f1f2da;
+  --ink: #00303b;
+  --muted: #4a6060;
+  --surface: #f1f2da;
+  --panel: #e8e9d0;
+  --edge: #d0d1b8;
   --accent: #ff7777;
-  --accent-hover: #ff9999;
-  --rule: 1px solid rgba(241, 242, 218, 0.1);
-  --glow: 0 0 0 1px rgba(241, 242, 218, 0.05);
+  --accent-hover: #e05555;
+  --rule: 1px solid rgba(0, 48, 59, 0.1);
+  --glow: 0 0 0 1px rgba(0, 48, 59, 0.05);
 }
 
 * {
@@ -230,10 +230,12 @@ hr {
 }
 
 .ghost-icon {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 1.5rem;
-  background-color: #f1f2da;
+  display: inline-block;
+  width: 1.8em;
+  height: 1.8em;
+  margin-right: 0.4em;
+  vertical-align: middle;
+  background-color: currentColor;
   -webkit-mask-image: url(/ghost.png);
   mask-image: url(/ghost.png);
   -webkit-mask-size: contain;
