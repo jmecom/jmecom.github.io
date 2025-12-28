@@ -96,12 +96,19 @@ a:focus {
   width: 100%;
   max-width: 75ch;
   margin: 0;
-  padding: calc(100vh - 10rem) 3rem 4rem;
+  padding: calc(100vh - 22rem) 3rem 4rem;
 }
 
 .main-content {
   max-width: 65ch;
   margin: 0;
+}
+
+.hero-ghost {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 0 0 1.5rem;
 }
 
 .social-row {

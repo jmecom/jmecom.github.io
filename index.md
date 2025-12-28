@@ -5,6 +5,8 @@ title: Home
 
 <main class="main-content">
 
+<img src="/ghost.png" alt="Ghost" class="hero-ghost">
+
 <p class="section-content">
 I'm a Staff Security Engineer currently working at Block on bitcoin security. Previously, I wrote the firmware for Bitkey, secured self-driving cars at Waymo, and worked on hardware security for Square's payment terminals.
 </p>
