@@ -32,6 +32,8 @@ My work focuses on low-level systems, cryptography, and hardware.
 <a href="mailto:mecomjordan@gmail.com">Email</a>
 </div>
 
+<div class="scroll-hint">scroll for more</div>
+
 <div class="post-intro">
 <h2>Software</h2>
 
