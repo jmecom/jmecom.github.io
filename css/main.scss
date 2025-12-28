@@ -111,7 +111,7 @@ a:focus {
   width: 100%;
   max-width: 75ch;
   margin: 0;
-  padding: calc(100vh - 32rem) var(--page-pad) 4rem;
+  padding: calc(100vh - 30rem) var(--page-pad) 4rem;
 }
 
 .main-content {
@@ -161,7 +161,7 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
-  margin: 1rem 0 1.25rem;
+  margin: 1rem 0 3rem;
   font-size: 0.9rem;
   color: var(--muted);
   opacity: 0;
@@ -170,32 +170,6 @@ a:focus {
 
 .social-row.visible {
   opacity: 1;
-}
-
-.scroll-hint {
-  display: inline-block;
-  margin: 0 0 2rem;
-  font-size: 1rem;
-  color: var(--muted);
-  letter-spacing: 0.08em;
-  text-transform: lowercase;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.scroll-hint.visible {
-  opacity: 1;
-  animation: scroll-fade 2.4s ease-in-out infinite;
-}
-
-@keyframes scroll-fade {
-  0%,
-  100% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 1;
-  }
 }
 
 .post-intro {
