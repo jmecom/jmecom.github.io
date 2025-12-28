@@ -48,7 +48,17 @@ body {
 }
 
 body.typewriter-running {
-  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+body.typewriter-running::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+html {
+  scrollbar-gutter: stable;
 }
 
 a {
