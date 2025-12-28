@@ -4,17 +4,18 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap");
 
 :root {
-  color: #fefff2;
+  color: #baccd4;
   background-color: #10121c;
-  --ink: #fefff2;
-  --muted: #888880;
+  --ink: #baccd4;
+  --muted: #77758a;
   --surface: #10121c;
   --panel: #1a1c28;
   --edge: #252834;
-  --accent: #ff604a;
-  --accent-hover: #ff8070;
-  --rule: 1px solid rgba(254, 255, 242, 0.1);
-  --glow: 0 0 0 1px rgba(254, 255, 242, 0.05);
+  --accent: #f57c6c;
+  --accent-hover: #ff9a8f;
+  --rule: 1px solid rgba(186, 204, 212, 0.1);
+  --glow: 0 0 0 1px rgba(186, 204, 212, 0.05);
+  --page-pad: 3rem;
 }
 
 * {
@@ -31,6 +32,10 @@
   z-index: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
@@ -39,6 +44,22 @@ body {
   line-height: 1.6;
   font-size: 16px;
   text-rendering: optimizeLegibility;
+  display: flex;
+  flex-direction: column;
+}
+
+body.typewriter-running {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+body.typewriter-running::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+html {
+  scrollbar-gutter: stable;
 }
 
 a {
@@ -54,9 +75,6 @@ a:focus {
 }
 
 .site-shell {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   padding: 0;
   position: relative;
   z-index: 1;
@@ -90,16 +108,53 @@ a:focus {
 }
 
 .site-main {
-  flex: 1;
   width: 100%;
   max-width: 75ch;
   margin: 0;
-  padding: 2rem 3rem 4rem;
+  padding: calc(100vh - 30rem) var(--page-pad) 4rem;
 }
 
 .main-content {
   max-width: 65ch;
   margin: 0;
+}
+
+.hero-ghost {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 0 0 1.5rem;
+}
+
+/* Typewriter effect */
+.typewriter {
+  margin: 0 0 1.25rem;
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.prompt {
+  color: var(--accent);
+  margin-right: 0.5rem;
+}
+
+.typewriter-text {
+  white-space: pre-wrap;
+}
+
+.cursor {
+  color: var(--accent);
+  animation: none;
+}
+
+.cursor.blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .social-row {
@@ -109,9 +164,20 @@ a:focus {
   margin: 1rem 0 3rem;
   font-size: 0.9rem;
   color: var(--muted);
-  align-items: center;
-  letter-spacing: 0.08em;
-  text-transform: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.social-row.visible {
+  opacity: 1;
+}
+
+.post-intro {
+  display: block;
+}
+
+body.typewriter-running .post-intro {
+  display: none;
 }
 
 .divider {
@@ -173,11 +239,15 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
-  color: var(--ink);
+  color: #10121c;
   margin-top: 3.5rem;
   margin-bottom: 1rem;
+  display: inline-block;
+  padding: 0.05rem 1.8rem;
+  background: rgba(186, 204, 212, 0.9);
+  border-radius: 0;
 }
 
 p {
@@ -260,6 +330,7 @@ hr {
 .project-name {
   color: var(--accent);
   font-weight: 700;
+  font-size: 1rem;
 }
 
 .project-name a {
@@ -272,7 +343,7 @@ hr {
 }
 
 .project-desc {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--muted);
   margin-top: 0.15rem;
 }
@@ -314,17 +385,100 @@ hr {
   opacity: 0.6;
 }
 
+/* Pager header */
+.pager-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem var(--page-pad);
+  background-color: var(--surface);
+}
+
+.pager-tab {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--ink);
+  font-size: 0.85rem;
+  color: var(--ink);
+  background-color: var(--surface);
+  flex-shrink: 0;
+}
+
+.pager-line {
+  flex: 1;
+  border-top: 1px solid var(--ink);
+  height: 0;
+}
+
+/* Pager footer */
+.pager-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem var(--page-pad);
+  background-color: var(--surface);
+}
+
+.pager-line-bottom {
+  flex: 1;
+  border-top: 1px solid var(--ink);
+  height: 0;
+}
+
+.pager-progress {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--ink);
+  font-size: 0.85rem;
+  color: var(--ink);
+  background-color: var(--surface);
+  min-width: 3.5rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
 @media (max-width: 640px) {
+  :root {
+    --page-pad: 1.5rem;
+  }
+
   body {
     font-size: 15px;
   }
 
   .site-main {
     max-width: 100%;
-    padding: 2rem 1.5rem 3rem;
+    padding: 4.5rem var(--page-pad) 3rem;
   }
 
   .main-content {
     max-width: 100%;
+  }
+
+  .pager-header {
+    padding: 1rem var(--page-pad);
+  }
+
+  .pager-tab {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .pager-footer {
+    padding: 1rem var(--page-pad);
+  }
+
+  .pager-progress {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+    min-width: 3rem;
   }
 }

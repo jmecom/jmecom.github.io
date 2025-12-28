@@ -3,10 +3,18 @@
   {% include head.html %}
   <body class="site">
     <canvas id="dot-grid"></canvas>
+    <div class="pager-header">
+      <span class="pager-tab">Jordan Mecom</span>
+      <div class="pager-line"></div>
+    </div>
     <div class="site-shell">
       <main class="site-main">
         {{ content }}
       </main>
+    </div>
+    <div class="pager-footer">
+      <div class="pager-line-bottom"></div>
+      <span class="pager-progress" id="scroll-progress">0%</span>
     </div>
     <script>
     (function() {
@@ -19,10 +27,10 @@
       const SPACING = 32;
       const DOT_RADIUS = 1;
       const INFLUENCE_RADIUS = 150;
-      const BASE_COLOR = [254, 255, 242];
+      const BASE_COLOR = [186, 204, 212];
       const COLORS = [
-        [255, 96, 74],
-        [254, 255, 242],
+        [245, 124, 108],
+        [186, 204, 212],
         [200, 200, 190]
       ];
 
@@ -34,8 +42,9 @@
 
       function initDots() {
         dots = [];
-        for (let x = SPACING; x < width; x += SPACING) {
-          for (let y = SPACING; y < height; y += SPACING) {
+        const offset = (width % SPACING) / 2;
+        for (let x = offset; x < width; x += SPACING) {
+          for (let y = 0; y < height; y += SPACING) {
             dots.push({ originX: x, originY: y, x: x, y: y });
           }
         }
@@ -89,6 +98,50 @@
       resize();
       animate();
     })();
+
+    // Scroll progress tracking
+    (function() {
+      const progress = document.getElementById('scroll-progress');
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = docHeight > 0 ? Math.round((scrollTop / docHeight) * 100) : 0;
+        progress.textContent = scrollPercent + '%';
+      });
+    })();
+
+    // Typewriter effect
+    (function() {
+      const text = "I'm a Staff Security Engineer currently working at Block on bitcoin security. Previously, I wrote the firmware for Bitkey, secured self-driving cars at Waymo, and worked on hardware security for Square's payment terminals.\n\nMy work focuses on low-level systems, cryptography, and hardware.";
+      const target = document.getElementById('typewriter-text');
+      const cursor = document.querySelector('.cursor');
+      if (!target) return;
+      document.body.classList.add('typewriter-running');
+
+      let i = 0;
+      const speed = 1;
+
+      function type() {
+        if (i < text.length) {
+          const char = text.charAt(i);
+          if (char === '\n') {
+            target.appendChild(document.createElement('br'));
+          } else {
+            target.appendChild(document.createTextNode(char));
+          }
+          i++;
+          setTimeout(type, speed);
+        } else {
+          cursor.classList.add('blink');
+          document.body.classList.remove('typewriter-running');
+          const socialRow = document.querySelector('.social-row');
+          if (socialRow) socialRow.classList.add('visible');
+        }
+      }
+
+      setTimeout(type, 500);
+    })();
+
     </script>
   </body>
 </html>
