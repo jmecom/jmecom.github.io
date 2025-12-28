@@ -58,33 +58,18 @@ My work focuses on low-level systems, cryptography, and hardware.
   </li>
 </ul>
 
-<h2>Talks</h2>
+<h2>Publications</h2>
 
 <ul class="project-list">
   <li class="project-item">
     <div class="project-name"><a href="https://www.youtube.com/watch?v=QQ6ZnGk_xDU">BSidesSF 2025: Confidential Computing</a></div>
     <div class="project-desc">An overview on confidential computing technology. <a href="https://docs.google.com/presentation/d/1eqAoFe1IeI4VS0Kc0TexD59hJqnpZr2SYB3NkDgfMow/edit?slide=id.g13b47bac47e_0_5#slide=id.g13b47bac47e_0_5">Slides</a></div>
   </li>
+  <li class="project-item">
+    <div class="project-name"><a href="https://jmecom.notion.site/jmecom-info-2580ab275b3141489778abc5954a6394">Notion</a></div>
+    <div class="project-desc">My Notion has a short blog section with recipes and CTF writeups.</div>
+  </li>
 </ul>
-
-<h2>Writing</h2>
-
-<p class="section-content">
-My <a href="https://jmecom.notion.site/jmecom-info-2580ab275b3141489778abc5954a6394">Notion</a> has a short blog section with recipes and CTF writeups.
-</p>
-
-<h2>Contact</h2>
-
-<p class="section-content">
-You can reach me at my <a href="mailto:mecomjordan@gmail.com">email</a> or <a href="https://linkedin.com/in/jmecom">LinkedIn</a>.
-</p>
-
-<div class="status-line">
-  <span class="status-item">
-    <span class="status-label">last updated:</span>
-    <span class="status-value">2025-12</span>
-  </span>
-</div>
 
 </div>
 </main>
