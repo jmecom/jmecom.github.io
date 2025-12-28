@@ -47,6 +47,10 @@ body {
   flex-direction: column;
 }
 
+body.typewriter-running {
+  overflow: hidden;
+}
+
 a {
   color: var(--accent);
   text-decoration: none;
