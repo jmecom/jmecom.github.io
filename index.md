@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Jordan Mecom
 ---
 
 <main class="main-content">
