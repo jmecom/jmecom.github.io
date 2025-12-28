@@ -31,6 +31,10 @@
   z-index: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
@@ -39,6 +43,8 @@ body {
   line-height: 1.6;
   font-size: 16px;
   text-rendering: optimizeLegibility;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -54,9 +60,6 @@ a:focus {
 }
 
 .site-shell {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   padding: 0;
   position: relative;
   z-index: 1;
@@ -90,11 +93,10 @@ a:focus {
 }
 
 .site-main {
-  flex: 1;
   width: 100%;
   max-width: 75ch;
   margin: 0;
-  padding: 5rem 3rem 4rem;
+  padding: calc(100vh - 10rem) 3rem 4rem;
 }
 
 .main-content {

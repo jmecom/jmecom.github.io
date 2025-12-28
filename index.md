@@ -5,8 +5,6 @@ title: Home
 
 <main class="main-content">
 
-<h1 class="terminal-header"><span class="ghost-icon"></span>Jordan Mecom</h1>
-
 <p class="section-content">
 I'm a Staff Security Engineer currently working at Block on bitcoin security. Previously, I wrote the firmware for Bitkey, secured self-driving cars at Waymo, and worked on hardware security for Square's payment terminals.
 </p>
