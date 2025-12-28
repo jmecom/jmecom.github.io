@@ -109,6 +109,38 @@
       });
     })();
 
+    // Typewriter effect
+    (function() {
+      const text = "I'm a Staff Security Engineer currently working at Block on bitcoin security. Previously, I wrote the firmware for Bitkey, secured self-driving cars at Waymo, and worked on hardware security for Square's payment terminals.\n\nMy work focuses on low-level systems, cryptography, and hardware.";
+      const target = document.getElementById('typewriter-text');
+      const cursor = document.querySelector('.cursor');
+      if (!target) return;
+      document.body.classList.add('typewriter-running');
+
+      let i = 0;
+      const speed = 1;
+
+      function type() {
+        if (i < text.length) {
+          const char = text.charAt(i);
+          if (char === '\n') {
+            target.appendChild(document.createElement('br'));
+          } else {
+            target.appendChild(document.createTextNode(char));
+          }
+          i++;
+          setTimeout(type, speed);
+        } else {
+          cursor.classList.add('blink');
+          document.body.classList.remove('typewriter-running');
+          const socialRow = document.querySelector('.social-row');
+          if (socialRow) socialRow.classList.add('visible');
+        }
+      }
+
+      setTimeout(type, 500);
+    })();
+
     </script>
   </body>
 </html>

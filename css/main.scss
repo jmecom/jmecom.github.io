@@ -96,7 +96,7 @@ a:focus {
   width: 100%;
   max-width: 75ch;
   margin: 0;
-  padding: calc(100vh - 25rem) 3rem 4rem;
+  padding: calc(100vh - 30rem) 3rem 4rem;
 }
 
 .main-content {
@@ -111,6 +111,37 @@ a:focus {
   margin: 0 0 1.5rem;
 }
 
+/* Typewriter effect */
+.typewriter {
+  margin: 0 0 1.25rem;
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.prompt {
+  color: var(--accent);
+  margin-right: 0.5rem;
+}
+
+.typewriter-text {
+  white-space: pre-wrap;
+}
+
+.cursor {
+  color: var(--accent);
+  animation: none;
+}
+
+.cursor.blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 .social-row {
   display: flex;
   flex-wrap: wrap;
@@ -118,9 +149,20 @@ a:focus {
   margin: 1rem 0 3rem;
   font-size: 0.9rem;
   color: var(--muted);
-  align-items: center;
-  letter-spacing: 0.08em;
-  text-transform: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.social-row.visible {
+  opacity: 1;
+}
+
+.post-intro {
+  display: block;
+}
+
+body.typewriter-running .post-intro {
+  display: none;
 }
 
 .divider {

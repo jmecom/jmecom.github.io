@@ -7,13 +7,18 @@ title: Home
 
 <img src="/ghost.png" alt="Ghost" class="hero-ghost">
 
+<div class="typewriter" id="typewriter">
+<span class="prompt">&gt;</span><span class="typewriter-text" id="typewriter-text"></span><span class="cursor">|</span>
+</div>
+
+<noscript>
 <p class="section-content">
 I'm a Staff Security Engineer currently working at Block on bitcoin security. Previously, I wrote the firmware for Bitkey, secured self-driving cars at Waymo, and worked on hardware security for Square's payment terminals.
 </p>
-
 <p class="section-content">
 My work focuses on low-level systems, cryptography, and hardware.
 </p>
+</noscript>
 
 <div class="social-row">
 <a href="https://github.com/jmecom">GitHub</a>
@@ -27,6 +32,7 @@ My work focuses on low-level systems, cryptography, and hardware.
 <a href="mailto:mecomjordan@gmail.com">Email</a>
 </div>
 
+<div class="post-intro">
 <h2>Software</h2>
 
 <ul class="project-list">
@@ -80,4 +86,5 @@ You can reach me at my <a href="mailto:mecomjordan@gmail.com">email</a> or <a hr
   </span>
 </div>
 
+</div>
 </main>
