@@ -3,10 +3,18 @@
   {% include head.html %}
   <body class="site">
     <canvas id="dot-grid"></canvas>
+    <div class="pager-header">
+      <span class="pager-tab">Jordan Mecom</span>
+      <div class="pager-line"></div>
+    </div>
     <div class="site-shell">
       <main class="site-main">
         {{ content }}
       </main>
+    </div>
+    <div class="pager-footer">
+      <div class="pager-line-bottom"></div>
+      <span class="pager-progress" id="scroll-progress">0%</span>
     </div>
     <script>
     (function() {
@@ -88,6 +96,17 @@
 
       resize();
       animate();
+    })();
+
+    // Scroll progress tracking
+    (function() {
+      const progress = document.getElementById('scroll-progress');
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = docHeight > 0 ? Math.round((scrollTop / docHeight) * 100) : 0;
+        progress.textContent = scrollPercent + '%';
+      });
     })();
     </script>
   </body>

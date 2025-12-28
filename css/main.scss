@@ -94,7 +94,7 @@ a:focus {
   width: 100%;
   max-width: 75ch;
   margin: 0;
-  padding: 2rem 3rem 4rem;
+  padding: 5rem 3rem 4rem;
 }
 
 .main-content {
@@ -314,6 +314,66 @@ hr {
   opacity: 0.6;
 }
 
+/* Pager header */
+.pager-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  background-color: var(--surface);
+}
+
+.pager-tab {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--ink);
+  font-size: 0.85rem;
+  color: var(--ink);
+  background-color: var(--surface);
+  flex-shrink: 0;
+}
+
+.pager-line {
+  flex: 1;
+  border-top: 1px solid var(--ink);
+  height: 0;
+}
+
+/* Pager footer */
+.pager-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  background-color: var(--surface);
+}
+
+.pager-line-bottom {
+  flex: 1;
+  border-top: 1px solid var(--ink);
+  height: 0;
+}
+
+.pager-progress {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--ink);
+  font-size: 0.85rem;
+  color: var(--ink);
+  background-color: var(--surface);
+  min-width: 3.5rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
 @media (max-width: 640px) {
   body {
     font-size: 15px;
@@ -321,10 +381,29 @@ hr {
 
   .site-main {
     max-width: 100%;
-    padding: 2rem 1.5rem 3rem;
+    padding: 4.5rem 1.5rem 3rem;
   }
 
   .main-content {
     max-width: 100%;
+  }
+
+  .pager-header {
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  .pager-tab {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .pager-footer {
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  .pager-progress {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+    min-width: 3rem;
   }
 }
