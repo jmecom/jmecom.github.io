@@ -402,7 +402,7 @@ hr {
   display: inline-block;
   padding: 0.4rem 0.8rem;
   border: 1px solid var(--ink);
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--ink);
   background-color: var(--surface);
   flex-shrink: 0;
@@ -437,7 +437,7 @@ hr {
   display: inline-block;
   padding: 0.4rem 0.8rem;
   border: 1px solid var(--ink);
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--ink);
   background-color: var(--surface);
   min-width: 3.5rem;
@@ -469,7 +469,7 @@ hr {
 
   .pager-tab {
     padding: 0.3rem 0.6rem;
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   .pager-footer {
@@ -478,7 +478,7 @@ hr {
 
   .pager-progress {
     padding: 0.3rem 0.6rem;
-    font-size: 0.75rem;
+    font-size: 1rem;
     min-width: 3rem;
   }
 }
