@@ -4,17 +4,17 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap");
 
 :root {
-  color: #fefff2;
+  color: #baccd4;
   background-color: #10121c;
-  --ink: #fefff2;
-  --muted: #888880;
+  --ink: #baccd4;
+  --muted: #77758a;
   --surface: #10121c;
   --panel: #1a1c28;
   --edge: #252834;
-  --accent: #ff604a;
-  --accent-hover: #ff8070;
-  --rule: 1px solid rgba(254, 255, 242, 0.1);
-  --glow: 0 0 0 1px rgba(254, 255, 242, 0.05);
+  --accent: #f57c6c;
+  --accent-hover: #ff9a8f;
+  --rule: 1px solid rgba(186, 204, 212, 0.1);
+  --glow: 0 0 0 1px rgba(186, 204, 212, 0.05);
   --page-pad: 3rem;
 }
 
@@ -246,7 +246,7 @@ h2 {
   margin-bottom: 1rem;
   display: inline-block;
   padding: 0.05rem 1.8rem;
-  background: rgba(254, 255, 242, 0.9);
+  background: rgba(186, 204, 212, 0.9);
   border-radius: 0;
 }
 
