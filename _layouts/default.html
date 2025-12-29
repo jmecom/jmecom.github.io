@@ -120,26 +120,45 @@
 
       // Pre-render all characters as hidden spans
       const chars = [];
+      const elements = []; // includes both spans and br elements for cursor positioning
       for (let j = 0; j < text.length; j++) {
         const char = text.charAt(j);
         if (char === '\n') {
-          target.appendChild(document.createElement('br'));
+          const br = document.createElement('br');
+          target.appendChild(br);
+          elements.push(br);
         } else {
           const span = document.createElement('span');
           span.textContent = char;
           span.style.opacity = '0';
           target.appendChild(span);
           chars.push(span);
+          elements.push(span);
         }
       }
 
+      // Move cursor to start position (before any text)
+      target.insertBefore(cursor, target.firstChild);
+      cursor.style.opacity = '1';
+
       let i = 0;
+      let elementIndex = 0;
       const speed = 1;
 
       function reveal() {
         if (i < chars.length) {
           chars[i].style.opacity = '1';
+          // Move cursor after the current element
+          while (elementIndex < elements.length && elements[elementIndex] !== chars[i]) {
+            elementIndex++;
+          }
+          if (elements[elementIndex + 1]) {
+            target.insertBefore(cursor, elements[elementIndex + 1]);
+          } else {
+            target.appendChild(cursor);
+          }
           i++;
+          elementIndex++;
           setTimeout(reveal, speed);
         } else {
           cursor.classList.add('blink');
