@@ -146,9 +146,11 @@ a:focus {
 .cursor {
   color: var(--accent);
   animation: none;
+  opacity: 0;
 }
 
 .cursor.blink {
+  opacity: 1;
   animation: blink 1s step-end infinite;
 }
 

@@ -110,7 +110,7 @@
       });
     })();
 
-    // Typewriter effect
+    // Typewriter effect - pre-render all text hidden, then reveal character by character
     (function() {
       const text = "I'm a Staff Security Engineer currently working at Block on bitcoin security. Previously, I wrote the firmware for Bitkey, secured self-driving cars at Waymo, and worked on hardware security for Square's payment terminals.\n\nMy work focuses on low-level systems, cryptography, and hardware.";
       const target = document.getElementById('typewriter-text');
@@ -118,19 +118,29 @@
       if (!target) return;
       document.body.classList.add('typewriter-running');
 
+      // Pre-render all characters as hidden spans
+      const chars = [];
+      for (let j = 0; j < text.length; j++) {
+        const char = text.charAt(j);
+        if (char === '\n') {
+          target.appendChild(document.createElement('br'));
+        } else {
+          const span = document.createElement('span');
+          span.textContent = char;
+          span.style.opacity = '0';
+          target.appendChild(span);
+          chars.push(span);
+        }
+      }
+
       let i = 0;
       const speed = 1;
 
-      function type() {
-        if (i < text.length) {
-          const char = text.charAt(i);
-          if (char === '\n') {
-            target.appendChild(document.createElement('br'));
-          } else {
-            target.appendChild(document.createTextNode(char));
-          }
+      function reveal() {
+        if (i < chars.length) {
+          chars[i].style.opacity = '1';
           i++;
-          setTimeout(type, speed);
+          setTimeout(reveal, speed);
         } else {
           cursor.classList.add('blink');
           document.body.classList.remove('typewriter-running');
@@ -139,7 +149,7 @@
         }
       }
 
-      setTimeout(type, 500);
+      setTimeout(reveal, 500);
     })();
 
     </script>
