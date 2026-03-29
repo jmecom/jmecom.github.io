@@ -35,18 +35,6 @@ Below are some projects I've created outside of work.
 
 <div class="row projects">
   <div class="col-md-6">
-    <a class="thumbnail" href="/projects/computational-photography/video-textures/">
-      <img src="../images/video-textures/city-4.gif">
-    </a>  
-    <div class="project-description">
-      <a href="/projects/computational-photography/video-textures/">
-        <h4>Video Textures</h4>
-      </a>
-      <p>Video textures are seamless, infinitely-repeating images that capture the essence of a video.</p>
-    </div>
-  </div>
-
-  <div class="col-md-6">
     <a class="thumbnail" href="https://github.com/jmecom/chip8/">
       <img src="../images/chip8.png">
     </a>  
