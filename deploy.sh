@@ -1,14 +1,10 @@
 #!/usr/bin/env bash
-set -euo
+set -euo pipefail
 
-bundle exec jekyll build
-# bundle exec travis-lint
-# bundle exec htmlproof ${HTML_FOLDER} --disable-external
+HTML_FOLDER="${HTML_FOLDER:-_site}"
+: "${CLOUDFLARE_PAGES_PROJECT_NAME:?Set CLOUDFLARE_PAGES_PROJECT_NAME}"
 
-cd ${HTML_FOLDER}
+bundle exec jekyll build --destination "${HTML_FOLDER}"
 
-# deploy
-git init
-git add --all
-git commit -m "Deploy to GitHub Pages"
-git push --force --quiet "https://${GH_TOKEN}@github.com/${GH_REF}" master:gh-pages
+npx wrangler@latest pages deploy "${HTML_FOLDER}" \
+  --project-name "${CLOUDFLARE_PAGES_PROJECT_NAME}"

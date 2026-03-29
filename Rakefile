@@ -1,14 +1,11 @@
 # encoding: UTF-8
 require "rubygems"
-require "tmpdir"
 require "bundler/setup"
 require "jekyll"
 
-# Change your GitHub reponame
-GITHUB_REPONAME    = "nandomoreirame/end2end"
-GITHUB_REPO_BRANCH = "gh-pages"
+CLOUDFLARE_PAGES_PROJECT_NAME_ENV = "CLOUDFLARE_PAGES_PROJECT_NAME"
 
-SOURCE = "source/"
+SOURCE = "."
 DEST   = "_site"
 CONFIG = {
   'layouts' => File.join(SOURCE, "_layouts"),
@@ -23,30 +20,19 @@ task default: %w[publish]
 desc "Generate blog files"
 task :generate do
   Jekyll::Site.new(Jekyll.configuration({
-    "source"      => "source/",
-    "destination" => "_site",
+    "source"      => SOURCE,
+    "destination" => DEST,
     "config"      => "_config.yml"
   })).process
 end
 
-desc "Generate and publish blog to gh-pages"
+desc "Generate and publish blog to Cloudflare Pages"
 task :publish => [:generate] do
-  Dir.mktmpdir do |tmp|
-    cp_r "_site/.", tmp
+  project_name = ENV[CLOUDFLARE_PAGES_PROJECT_NAME_ENV]
+  abort("rake aborted: '#{CLOUDFLARE_PAGES_PROJECT_NAME_ENV}' must be set.") if project_name.to_s.empty?
 
-    pwd = Dir.pwd
-    Dir.chdir tmp
-
-    system "git init"
-    system "git checkout --orphan #{GITHUB_REPO_BRANCH}"
-    system "git add ."
-    message = "Site updated at #{Time.now.utc}"
-    system "git commit -am #{message.inspect}"
-    system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
-    system "git push origin #{GITHUB_REPO_BRANCH} --force"
-
-    Dir.chdir pwd
-  end
+  system "npx", "wrangler@latest", "pages", "deploy", DEST, "--project-name", project_name
+  abort("rake aborted!") unless $?.success?
 end
 
 desc "Begin a new post in #{CONFIG['posts']}"
