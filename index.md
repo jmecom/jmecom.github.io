@@ -56,6 +56,14 @@ My work focuses on low-level systems, cryptography, and hardware.
     <div class="project-name"><a href="https://github.com/jmecom/lcars">LCARS</a></div>
     <div class="project-desc">A GitHub dashboard TUI.</div>
   </li>
+  <li class="project-item">
+    <div class="project-name"><a href="https://github.com/jmecom/odo">odo</a></div>
+    <div class="project-desc">AI-driven vulnerability discovery; found hundreds of vulns.</div>
+  </li>
+  <li class="project-item">
+    <div class="project-name"><a href="https://github.com/jmecom/permacomputing">permacomputing</a></div>
+    <div class="project-desc">Software for an uncertain future.</div>
+  </li>
 </ul>
 
 <h2>Publications</h2>
