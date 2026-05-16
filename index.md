@@ -45,6 +45,10 @@ My work focuses on low-level systems, cryptography, and hardware.
     <div class="project-desc">A header-only library for tiny certs, for resource constrained devices.</div>
   </li>
   <li class="project-item">
+    <div class="project-name"><a href="https://github.com/jmecom/ponycrypt">Ponycrypt</a></div>
+    <div class="project-desc">Pure ponylang cryptography library.</div>
+  </li>
+  <li class="project-item">
     <div class="project-name"><a href="https://github.com/jmecom/capable">Capable</a></div>
     <div class="project-desc">An experimental capability-secure systems language.</div>
   </li>
@@ -70,8 +74,16 @@ My work focuses on low-level systems, cryptography, and hardware.
 
 <ul class="project-list">
   <li class="project-item">
+    <div class="project-name"><a href="https://spiralbtc.substack.com/p/meet-loupe-ai-powered-vulnerability">Project Loupe</a></div>
+    <div class="project-desc">AI-powered vuln finding for the good of bitcoin OSS.</div>
+  </li>
+  <li class="project-item">
     <div class="project-name"><a href="https://www.youtube.com/watch?v=QQ6ZnGk_xDU">BSidesSF 2025: Confidential Computing</a></div>
     <div class="project-desc">An overview on confidential computing technology. <a href="https://docs.google.com/presentation/d/1eqAoFe1IeI4VS0Kc0TexD59hJqnpZr2SYB3NkDgfMow/edit?slide=id.g13b47bac47e_0_5#slide=id.g13b47bac47e_0_5">Slides</a></div>
+  </li>
+  <li class="project-item">
+    <div class="project-name"><a href="https://assets.ctfassets.net/mtmp6hzjjvnd/6Qjcs8zgMiyffC0Uk8cx4V/380f331f5b4156622c8f5a376c352c96/Self-Custody_without_Hardware_-10-30-24-.pdf?ref=bitkey.build">Self-custody without Hardware Paper</a></div>
+    <div class="project-desc">A novel self-custody bitcoin wallet design.</div>
   </li>
   <li class="project-item">
     <div class="project-name"><a href="https://jmecom.notion.site/jmecom-info-2580ab275b3141489778abc5954a6394">Notion</a></div>
